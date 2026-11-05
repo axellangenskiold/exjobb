@@ -2,6 +2,8 @@
 
 Nov 5, 2026 · @Gustaf
 
+Stipendier, fonder och annat utanför Axels lista: [Fler pengakällor](fler_pengakallor.md)
+
 ## Sammanfattning
 
 Av Axels 118 stipendier är ungefär 15 värda att söka. Resten stänger efter exjobbet, kräver ett helt år utomlands eller kräver en koppling ni inte har. Fältarbetet pågår 15 feb – 1 jun 2027, så pengar som beslutas eller betalas ut efter juni hjälper bara som bonus i efterhand.
@@ -186,6 +188,14 @@ Uppdaterat efter era svar: Axel född 2002, Gustaf född 2000, ingen av er i nat
 - [ ] Feb: LU:s gemensamma formulär, LU:s resestipendier, AF
 - [ ] 1 mar: Anna Whitlocks Minnesfond (båda)
 - [ ] 31 mar: Hakon Hansson, Gustaf Söderberg (Axel), Karriärstipendiet
+
+Från fliken Fler pengakällor:
+
+- [ ] Nu: be koordinatorn ordna skriftligt avtal LU–EfA så att Student UT-försäkringen gäller
+- [ ] Nu: skaffa gratis konto hos Planet med LU-mejl
+- [ ] Dec: Idea Wild (utrustning) och Rufford (löpande, tre referenser)
+- [ ] Jan: sök CSN merkostnadslån för uppsatsresa och utlandsdel, med intyg från Jonas och LTH
+- [ ] Jan: kolla om Mohamed bin Zayed har öppnat en ny runda
 
 ## Källor
 
