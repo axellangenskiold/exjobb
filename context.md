@@ -14,6 +14,12 @@ The list is finished: `stipendier.xlsx` has 118 unique grants. Nobody has applie
 
 **Open question:** is the home university Lund/LTH? This was only inferred from the `eitn21` folder and has not been confirmed. If it's wrong, the 89 Lund/LTH rows need replacing with that university's funds.
 
+## Progress as of 10 Nov 2026
+
+- **Thesis:** Gustaf Jensen and Axel Langenskiöld, computer science at LTH. Supervisors are Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics), working with Elephants for Africa. In Botswana 15 Feb – 15 May 2027.
+- **Botswana research permit:** the proposal (`MENT_signed.pdf`) and the endorsement letter are signed. `Application_for_Research_Permit_Axel_V2.pdf` is in the folder.
+- **Sveriges Ingenjörers Miljöfond:** due 10 Nov 2026. The application is in `miljofond-ansokan.md`, with a checklist, the final answers and the email.
+
 ## The workbook
 
 - **`Stipends` sheet:** Name, When to apply, Link, Max amount (SEK), Amount note, Who can apply / catch, Scope. Sorted by highest stated amount. Yellow rows are open now, or open or close before 2027.
