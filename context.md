@@ -29,6 +29,7 @@ Applied so far:
 - **ST:s internationella stipendium:** sent 11 Nov 2026 to magnus.runsten@st.org as one joint application. Everything is in `ST-internationellt-stipendium/`. ST's English page says 5,000-10,000 SEK per person, so don't expect 40,000.
 
 In progress:
+- **Mohamed bin Zayed Species Conservation Fund:** form answers in `Mohamed-bin-Zayed-Species-Conservation-Fund/Gustaf.md`, for the round 4-31 Jan 2027. It's a web form with fixed fields, so it's written in Markdown, not LaTeX.
 - **Animal Behavior Society Student Research Grant:** due 15 Dec 2026. Gustaf's 8-page application is in `ABS-Student-Research-Grant/Gustaf.tex`, and Axel's is made after Gustaf's has been read through. Notes and a to-do list are in its `ansokan.md`.
 
 ## Folder convention (from 11 Nov 2026)
@@ -40,7 +41,7 @@ Each grant we apply for gets its own folder named after it, holding `ansokan.md`
   - If each person's application is one document: `Gustaf.tex` + `Gustaf.pdf` and `Axel.tex` + `Axel.pdf`.
   - If each has several documents (e.g. letter, budget, CV as separate files): subfolders `Gustaf/` and `Axel/`.
   - `ansokan.md` stays shared and lists the to-do for each of us.
-- **Write applications in LaTeX**, one self-contained `.tex` file per application, so it can be uploaded straight to Overleaf. Commit the compiled PDF beside it. Use XeLaTeX when a grant requires Arial.
+- **Write applications in LaTeX** when the funder wants a document, one self-contained `.tex` file per application, so it can be uploaded straight to Overleaf. Commit the compiled PDF beside it. Use XeLaTeX when a grant requires Arial. When the funder uses a web form with fixed fields, write the answers field by field in `Gustaf.md` / `Axel.md` instead, with word counts.
 - **Order:** we write the applications for each other. Draft Gustaf's first, read it through together, then make Axel's from it, with his own CV, background and, where the funder may compare them, a different focus.
 - CVs to build from: `CV_Gustaf_Jensen.pdf` and `CV_Axel_Langenskiold.pdf` in the repo root.
 
@@ -97,7 +98,7 @@ Verdict counts on 11 Nov 2026:
 | 15 Dec 2026 | Animal Behavior Society Student Research Grant; join ABS first | Both |
 | 15 Jan 2027 | Längmanska kulturfonden | Joint |
 | Jan 2027 | CSN merkostnadslån, Student UT insurance via LU (needs a written LU-EfA agreement) | Both |
-| End Feb 2027 | Mohamed bin Zayed Species Conservation Fund, up to USD 25,000, apply with EfA | Joint |
+| 4-31 Jan 2027 | Mohamed bin Zayed Species Conservation Fund, USD 5,000; draft in its folder, one application (Gustaf applicant, Axel key personnel) | Joint |
 | Feb 2027 | LU joint form, LU travel grants, AF if you have joined Studentlund | Each |
 | 1 Mar 2027 | Anna Whitlocks Minnesfond; ASM Grants-in-Aid (join ASM first) | Each |
 | 31 Mar 2027 | Hakon Hansson, Gustaf Söderberg (Axel), Karriärstipendiet | Each |
