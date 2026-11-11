@@ -118,6 +118,7 @@ Verdict counts on 11 Nov 2026:
 
 ## Other files
 
+- `todo.md`: open to-dos, questions for Kate and supervisors, and deadlines.
 - `CV_Gustaf_Jensen.pdf`, `CV_Axel_Langenskiold.pdf`: our CVs (Nov 2026), used for individual applications.
 - `stipendier_prioritering.md`: the ranked shortlist with requirements per application (from 5 Nov 2026).
 - `fler_pengakallor.md`: loans, insurance, equipment and international sources (from 5 Nov 2026). Its content is now also in the workbook.

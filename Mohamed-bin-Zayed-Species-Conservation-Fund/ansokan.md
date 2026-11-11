@@ -43,7 +43,6 @@ Applications are closed until 4 Jan 2027. Late applications roll over to the nex
 - [ ] Ask Kate to be Reference 1, for her phone numbers, a wild photo of a Makgadikgadi bull, Stephanie's and Thatayaone's emails, and a recent EfA annual report
 - [ ] Find a second reference outside LU and EfA (optional, e.g. a Saab manager with a company email)
 - [ ] Fill in address, secondary email and contacts at the Ministry and DWNP
-- [ ] Check the IUCN citation for Gobush et al. 2021 on iucnredlist.org
 - [ ] Update 9.3 with SI, ST and ABS decisions
 - [ ] Submit between 4 and 31 Jan 2027, then write "Sent <date>" in `stipendier.xlsx`
 

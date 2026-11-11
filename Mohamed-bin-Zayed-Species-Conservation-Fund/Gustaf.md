@@ -66,13 +66,12 @@ Paste each answer into the matching field of the online form (<https://applicati
 |---|---|---|---|
 | Gustaf Jensen | Applicant, MSc researcher: modelling, simulation, fieldwork | MSc student, Computer Science (machine learning), Lund University; data analysis and statistical simulation at Saab | gustaf.jensen@gmail.com |
 | Axel Langenskiöld | Co-researcher: modelling, evaluation, fieldwork | MSc student, Computer Science (machine learning), Lund University | axel@langenskiold.se |
-| Jonas Skeppstedt | Main supervisor | Department of Computer Science, Lund University | jonas.skeppstedt@cs.lth.se |
-| Johan Lindström | Co-supervisor, spatial statistics | Department of Mathematical Statistics, Lund University | johan.lindstrom@matstat.lu.se |
+| Jonas Skeppstedt | Main supervisor | Senior Lecturer, Department of Computer Science, Lund University | jonas.skeppstedt@cs.lth.se |
+| Johan Lindström | Co-supervisor, spatial statistics | Senior Lecturer and Director of Studies, Mathematical Statistics, Lund University | johan.lindstrom@matstat.lu.se |
 | Dr Kate Evans | Research partner, elephant behaviour | Founder and Director of Research, Elephants for Africa | kate@elephantsforafrica.org |
 | Stephanie Kong | Partner organisation lead | Director, Elephants for Africa | **TODO:** email |
 | Thatayaone Motsentwa | GPS data and fieldwork | Research Officer, Elephants for Africa | **TODO:** email |
 
-**TODO:** add Jonas's and Johan's academic titles (e.g. Associate Professor) if you know them.
 
 **4.3 Key affiliations:** Yes
 
@@ -105,7 +104,7 @@ Paste each answer into the matching field of the online form (<https://applicati
 
 > The African savanna elephant was listed as Endangered on the IUCN Red List in 2021 (Gobush et al. 2021), after the population fell by at least 60% over the last 50 years, mainly through poaching and habitat loss. Botswana holds the world's largest population, so how Botswana's elephants and people share the land matters for the species as a whole. In the Makgadikgadi, bulls depend on the Boteti River for water in the dry season, but the land west of the river is farmed, and elephants caused 41% of all wildlife damage to crops and water infrastructure in Botswana between 2018 and 2022 (ATC News 2023). Retaliation and loss of tolerance are therefore major threats. The salt pans make this landscape unusual: they are among the largest in the world and give strong contrasts in soil minerals, which elephants need because their plant diet is low in sodium (Holdø et al. 2002). Understanding whether bulls move between the river, pans and farmland to meet mineral needs shows which habitats and corridors must be protected, and where mineral sources could be managed to keep bulls inside the park.
 
-**TODO:** Gobush et al. 2021 reference for the form: Gobush, K.S., Edwards, C.T.T., Maisels, F., Wittemyer, G., Balfour, D. & Taylor, R.D. 2021. *Loxodonta africana*. The IUCN Red List of Threatened Species 2021: e.T181008073A204401095. Check the citation on <https://www.iucnredlist.org> before sending.
+Source for 5.4 and 5.5 (checked 11 Nov 2026): Gobush KS, Edwards CTT, Balfour D, Wittemyer G, Maisels F, Taylor RD 2021. *Loxodonta africana* (amended version of 2021 assessment). The IUCN Red List of Threatened Species 2021: e.T181008073A204401095. The decline of at least 60% over 50 years is from IUCN's announcement of 25 Mar 2021.
 
 **5.5 IUCN status of the primary target species:** Endangered (EN)
 
