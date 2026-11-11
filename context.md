@@ -1,70 +1,102 @@
 # Context: Botswana thesis funding
 
-Last updated 11 Nov 2026. Grant data was checked on 4 Nov 2026, and deadlines were rechecked on 10 Nov 2026.
+Last updated 11 Nov 2026. Grant data was first checked on 4 Nov 2026, deadlines were rechecked on 10 Nov 2026, and on 11 Nov 2026 every row got an eligibility check and about 60 new grants were added from Sweden, Europe, the USA and Africa.
 
 ## Goal
 
-Two students are doing a master's thesis in Botswana on elephant preservation and need as much funding as possible. The task was to find at least 100 different scholarships or stipends available in Sweden, prioritising the highest paying, and list each one's name, when to apply and website link in Excel.
+Two students are doing a master's thesis in Botswana on elephant movement and minerals, and they need as much funding as possible. The workbook lists every scholarship, stipend, grant, prize, loan or in-kind support they could apply for, says which of them is eligible, and says what each application needs.
 
 Filter: leave out anything restricted to women or to specific ethnic groups. Male-only funds are fine and are marked as such.
 
+## Who we are (use this for every eligibility check)
+
+| | Gustaf Jensen | Axel Langenskiöld |
+|---|---|---|
+| Born | 2000 (26 in 2026) | 2002 (24 in 2026) |
+| From | Rissne, registered in Sundbyberg (Duvbo), Stockholms län | Göteborg |
+| Programme | LTH, Civilingenjör Datateknik, master's level | Same |
+| Memberships | ST (student). Not in a nation or Studentlund; may join Studentlund. Not in Sveriges Ingenjörer | ST (student). Not in a nation or Studentlund |
+
+- Both are male Swedish citizens.
+- Thesis: spring 2027 with Elephants for Africa (EfA), "Minerals, movement and corridors of bull elephants in the Makgadikgadi". Supervisors are Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics). Kate Evans at EfA is the contact.
+- In Botswana 15 Feb - 1 Jun 2027. They extended from 15 May so the trip qualifies for Anna Whitlocks Minnesfond; the permit and endorsement letter still say 15 May.
+- Mineral data will come from literature, maps and the mining industry, because EfA's lab results are stuck awaiting export permits. Soil samples from the corridors they identify would need to be exported for analysis, and they must fund the fieldwork part themselves.
+
 ## Status
 
-`stipendier.xlsx` has 118 unique grants: 75 still open or upcoming, and 43 whose deadline has passed for this thesis.
+Applied so far:
+- **Sveriges Ingenjörers Miljöfond:** sent 10 Nov 2026. Everything is in `Sveriges-Ingenjorers-Miljofond/`.
+- **ST:s internationella stipendium:** sent 11 Nov 2026 to magnus.runsten@st.org as one joint application. Everything is in `ST-internationellt-stipendium/`. ST's English page says 5,000-10,000 SEK per person, so don't expect 40,000.
 
-Applied so far: Sveriges Ingenjörers Miljöfond, sent 10 Nov 2026, and ST:s internationella stipendium, sent 11 Nov 2026. The home university is confirmed as LTH (Civilingenjör i Datateknik).
+Each grant you apply for gets its own folder named after it, holding `ansokan.md` and copies of the files sent.
 
-## Progress as of 11 Nov 2026
+## The workbook (`stipendier.xlsx`)
 
-- **Thesis:** Gustaf Jensen and Axel Langenskiöld, computer science at LTH. Supervisors are Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics), working with Elephants for Africa. In Botswana 15 Feb – 15 May 2027.
-- **Botswana research permit:** the proposal (`MENT_signed.pdf`) and the endorsement letter are signed. `Application_for_Research_Permit_Axel_V2.pdf` is in the folder.
-- **Sveriges Ingenjörers Miljöfond:** sent 10 Nov 2026. Everything is in `Sveriges-Ingenjorers-Miljofond/`: the application text and email in `ansokan.md`, and the attached files.
-- **ST:s internationella stipendium:** sent 11 Nov 2026 to magnus.runsten@st.org as one joint application. Everything is in `ST-internationellt-stipendium/`: the filled form `ST-ansokan-Langenskiold-Jensen.docx`, plus `ansokan.md` and `ansokan.pdf`.
-- **Folders:** each grant you apply for gets its own folder named after it, holding `ansokan.md` and copies of the files sent.
+- **`Stipends` sheet:** 120 grants that are open, upcoming, rolling or undated.
+- **`Passed` sheet:** 58 grants whose next round is too late for this thesis, kept for reference and follow-up projects.
+- **`Notes` sheet:** profile, verdict legend, assumptions and caveats.
 
-## The workbook
+Columns A-J are the original ones (Name, Our status, Window, Last day to apply, When to apply, Link, Max amount (SEK), Amount note, Who can apply / catch, Scope). Columns K-S were added on 11 Nov 2026:
 
-- **`Stipends` sheet:** 75 grants that are still open or upcoming, sorted by last day to apply, soonest first. Columns: Name, Our status, Window, Last day to apply, When to apply, Link, Max amount (SEK), Amount note, Who can apply / catch, Scope. Yellow rows are open now and green rows have been applied for. Hover over a date to see its note and source.
-- **`Passed` sheet:** 43 grants with no application round closing before 30 Jun 2027.
-- **`Notes` sheet:** assumptions, exclusions and caveats.
+| Column | Meaning |
+|---|---|
+| Gustaf (26, Sundbyberg) / Axel (24, Göteborg) | Yes, No, If joins, or Unclear for each person |
+| Verdict | Applied, Both, Gustaf only, Axel only, If you join first, Unclear - ask, Timing doesn't fit, Via EfA only, Not eligible |
+| Why (eligibility check) | The rule that decided the verdict |
+| What to submit | Attachments and forms, where known |
+| Apply as | Joint, Each (separately), Nominated, or Via organisation |
+| Type | Stipend, Travel grant, Research grant, Prize, Loan, Insurance, In-kind, Org grant |
+| Next step | What to do and when |
+| Last checked | When the row was last verified |
 
-The counts below cover all 118 grants across both sheets.
+Formatting: rows marked "Not eligible" are struck through in grey and sorted to the bottom of each sheet. "Timing doesn't fit" and "Via EfA only" rows are grey italic. Yellow rows are open now and green rows have been applied for. Hover over a date to see its note and source. Use the filter on the Verdict column to hide struck rows.
 
-| Measure | Rows |
-|---|---:|
-| Total | 118 |
-| Lund/LTH | 89 |
-| National | 22 |
-| Regional (needs a local tie) | 7 |
-| On one joint Lund form | 71 |
-| Requires membership in a student nation | 34 |
-| Publishes an amount | 29 |
-| Publishes 25,000 SEK or more | 20 |
+Verdict counts on 11 Nov 2026:
 
-## Nearest dates
+| Verdict | Stipends | Passed |
+|---|---:|---:|
+| Applied | 2 | 0 |
+| Both | 39 | 0 |
+| Axel only | 3 | 0 |
+| If you join first | 21 | 0 |
+| Unclear - ask | 19 | 1 |
+| Timing doesn't fit | 2 | 45 |
+| Via EfA only | 3 | 1 |
+| Not eligible | 31 | 11 |
 
-See the top of the `Stipends` sheet, which is sorted by last day to apply.
+## Nearest actions (as of 11 Nov 2026)
 
-## Largest grants
-
-| Grant | Amount (SEK) | When to apply | Catch |
-|---|---:|---|---|
-| Sten K Johnsons Stiftelse | 400,000 | 21 Jan – 18 Feb 2027 | Skåne link |
-| Rotary Global Grant | ~300,000 | Rolling, start 6+ months before travel | About a full year abroad; amount is a rough conversion of US$30,000 |
-| Anders Walls stipendium | 200,000 | 1 Sep – 1 Nov 2027 | Maximum age 25 |
-| Anna Whitlocks Minnesfond | 100,000 | 1 Jan – 1 Mar and 1 Jul – 1 Sep 2027 | See the catch column |
-| Ege-fonden | 100,000 | 15 Mar 2027 | About a full year abroad |
+| When | What | Who |
+|---|---|---|
+| 27 Nov 2026 | Awesome Foundation, Conservation and Climate (~USD 1,000, not for travel) | Both |
+| 30 Nov 2026 | Felix Neubergh | Axel |
+| 30 Nov 2026 | Alice McCosh Trust; ask first whether thesis fieldwork is excluded | Both |
+| 15 Dec 2026 | Animal Behavior Society Student Research Grant; join ABS first | Both |
+| 15 Jan 2027 | Längmanska kulturfonden | Joint |
+| Jan 2027 | CSN merkostnadslån, Student UT insurance via LU (needs a written LU-EfA agreement) | Both |
+| End Feb 2027 | Mohamed bin Zayed Species Conservation Fund, up to USD 25,000, apply with EfA | Joint |
+| Feb 2027 | LU joint form, LU travel grants, AF if you have joined Studentlund | Each |
+| 1 Mar 2027 | Anna Whitlocks Minnesfond; ASM Grants-in-Aid (join ASM first) | Each |
+| 31 Mar 2027 | Hakon Hansson, Gustaf Söderberg (Axel), Karriärstipendiet | Each |
+| 20 Apr 2027 | Herbert & Karin Jacobsons stiftelse | Axel |
 
 ## Known limitations
 
-- No Swedish grant specifically for elephants or African wildlife was found, so most rows are general grants.
-- Minor Field Studies (25,000 SEK): Botswana's eligibility is unconfirmed, so ask MFS@global.lu.se. It can't be combined with the Crafoord travel grant for the same stay.
+- No Swedish grant specifically for elephants or African wildlife was found. The wildlife-specific options are international: Mohamed bin Zayed, Animal Behavior Society, American Society of Mammalogists, Rufford and Idea Wild.
+- Some international grants were verified only through directories (Terra Viva Grants, European Funding Guide, fundsforngos), because the funder's own page couldn't be opened. The source is in each date comment. Check the funder's page before applying.
+- The Lindbergh Grant was found only on a third-party listing and is unconfirmed.
+- Minor Field Studies and the Crafoord travel grant can't be used: their rounds don't fit a trip that starts 15 Feb 2027.
+- ÅForsk paused its autumn 2026 call and said a decision on future calls would be posted in Nov 2026, so check again.
 - Lund timings come from the university's list dated 31 Jan 2025, so confirm them when each round opens.
 - Dates marked "expected", or given only as a season, are inferred from past rounds.
-- ÅForsk paused its autumn 2026 call and said a decision on future calls would be posted in Nov 2026, so check again.
-- Every link passed an automatic check on 4 Nov 2026 except rotary.org, which blocked it (HTTP 429).
+- Currency is converted roughly for sorting only: 1 USD ~ 10 SEK, 1 EUR ~ 11 SEK, 1 GBP ~ 13 SEK.
 - Karriärföretagen's full grant list is behind a login and wasn't searched.
+
+## Other files
+
+- `stipendier_prioritering.md`: the ranked shortlist with requirements per application (from 5 Nov 2026).
+- `fler_pengakallor.md`: loans, insurance, equipment and international sources (from 5 Nov 2026). Its content is now also in the workbook.
 
 ## Rebuilding the list
 
-The original build scripts were in a temporary folder and have been deleted. `stipendier.xlsx` is the source of truth, so edit it directly.
+`stipendier.xlsx` is the source of truth, so edit it directly. When you apply, write "Sent <date>" in Our status and set Verdict to Applied.
