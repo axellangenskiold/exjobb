@@ -22,21 +22,27 @@ Applicant: **Gustaf Jensen** (draft written in his name). Amount: USD 500-2,000;
 
 ## Files
 
-- `ABS_SRG_Jensen.docx`: editable draft (edit this, then export to PDF)
-- `ABS_SRG_Jensen.pdf`: the current 8-page PDF, checked to land exactly on 8 pages with each part on its page
-- `make_application.js`: script that built the draft (`node make_application.js out.docx`)
+This is an individual grant, so each of us has our own application (see "Folder convention" in `../context.md`).
+
+- `Gustaf.tex`: Gustaf's application in LaTeX. Upload it to Overleaf and set Menu → Compiler → **XeLaTeX** so it uses Arial (or Liberation Sans, which has the same letter widths). pdfLaTeX also works but uses Helvetica.
+- `Gustaf.pdf`: compiled version, exactly 8 pages, each part on its page.
+- `Axel.tex` / `Axel.pdf`: to be made once Gustaf's version has been read through.
+
+The `\gotopage{n}` command in the .tex makes the budget start on page 5, the CV on page 6 and the questionnaire on page 8. If the part before is too long, the Overleaf log warns "ABS layout: ... Shorten the part before it!". Red text marks things to fill in and must be gone before sending.
+
+**Axel's version:** ABS gives one grant per person, and two near-identical proposals from the same project risk being judged against each other. Give Axel's proposal its own focus (for example the prediction comparison, H5, as the main question) and its own summary and hypotheses, and swap the applicant, CV and DEI statement.
 
 Content is taken from the project plan (`Goal_Document___Project_Plan_v2.pdf`) and the permit proposal (`MENT_signed.pdf`): same title, research questions, methods, dates, sampling plan and budget figures. The hypotheses H1-H5 are RQ1-RQ3 split into testable parts, as ABS asks for hypotheses with if/then predictions.
 
 ## To do before sending
 
 - [ ] Join ABS as a student member (USD 40)
-- [ ] DEI statement (page 3): replace the bracket with one or two sentences about your own background
-- [ ] Budget (page 5): confirm how the rest is paid (savings, CSN) and remove the bracket
-- [ ] CV (page 6): add Saab role and dates and any awards, or write "None yet"
-- [ ] CV (page 7): Axel adds courses and experience, **or** delete page 7 and let your CV run over pages 6-7. The rules say pages 6-7 are the CV and don't mention collaborators, so deleting is the safer choice if unsure
+- [ ] DEI statement (page 3): check the sentence about the Peru exchange and the orientation weeks, make it yours, remove the red note
+- [ ] Budget (page 5): confirm how the rest is paid (savings, CSN) and remove the red note
+- [ ] CV (pages 6-7): built from `CV_Gustaf_Jensen.pdf`; add any awards or keep "None yet"
 - [ ] Check exchange rates and update the USD figures if they have moved
-- [ ] After every edit, export to PDF and check it is still exactly 8 pages with Budget on 5, CV on 6 and the questionnaire on 8 (use page breaks, not empty lines)
+- [ ] After every edit, check the PDF is still exactly 8 pages and the Overleaf log has no "ABS layout" warning
+- [ ] Then make Axel's version (`Axel.tex`)
 - [ ] Ask Kate to read it; she may know reviewers' expectations
 - [ ] Update "Other proposals" if SI or ST decide before 15 Dec
 - [ ] Submit, then write "Sent <date>" in `stipendier.xlsx`

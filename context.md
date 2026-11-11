@@ -29,9 +29,20 @@ Applied so far:
 - **ST:s internationella stipendium:** sent 11 Nov 2026 to magnus.runsten@st.org as one joint application. Everything is in `ST-internationellt-stipendium/`. ST's English page says 5,000-10,000 SEK per person, so don't expect 40,000.
 
 In progress:
-- **Animal Behavior Society Student Research Grant:** 8-page draft in Gustaf's name in `ABS-Student-Research-Grant/`, due 15 Dec 2026. Placeholders and a to-do list are in its `ansokan.md`. Only one applicant per proposal, so Axel is listed as collaborator.
+- **Animal Behavior Society Student Research Grant:** due 15 Dec 2026. Gustaf's 8-page application is in `ABS-Student-Research-Grant/Gustaf.tex`, and Axel's is made after Gustaf's has been read through. Notes and a to-do list are in its `ansokan.md`.
 
-Each grant you apply for gets its own folder named after it, holding `ansokan.md` and copies of the files sent.
+## Folder convention (from 11 Nov 2026)
+
+Each grant we apply for gets its own folder named after it, holding `ansokan.md` (rules, deadline, to-do, how to submit) and copies of the files sent.
+
+- **Joint grants** (one application for both): the application files go straight in the folder.
+- **Individual grants** (each applies on their own): one application per person in the same folder.
+  - If each person's application is one document: `Gustaf.tex` + `Gustaf.pdf` and `Axel.tex` + `Axel.pdf`.
+  - If each has several documents (e.g. letter, budget, CV as separate files): subfolders `Gustaf/` and `Axel/`.
+  - `ansokan.md` stays shared and lists the to-do for each of us.
+- **Write applications in LaTeX**, one self-contained `.tex` file per application, so it can be uploaded straight to Overleaf. Commit the compiled PDF beside it. Use XeLaTeX when a grant requires Arial.
+- **Order:** we write the applications for each other. Draft Gustaf's first, read it through together, then make Axel's from it, with his own CV, background and, where the funder may compare them, a different focus.
+- CVs to build from: `CV_Gustaf_Jensen.pdf` and `CV_Axel_Langenskiold.pdf` in the repo root.
 
 ## The workbook (`stipendier.xlsx`)
 
@@ -106,6 +117,7 @@ Verdict counts on 11 Nov 2026:
 
 ## Other files
 
+- `CV_Gustaf_Jensen.pdf`, `CV_Axel_Langenskiold.pdf`: our CVs (Nov 2026), used for individual applications.
 - `stipendier_prioritering.md`: the ranked shortlist with requirements per application (from 5 Nov 2026).
 - `fler_pengakallor.md`: loans, insurance, equipment and international sources (from 5 Nov 2026). Its content is now also in the workbook.
 
