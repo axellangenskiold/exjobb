@@ -36,20 +36,29 @@ Each grant you apply for gets its own folder named after it, holding `ansokan.md
 - **`Passed` sheet:** 58 grants whose next round is too late for this thesis, kept for reference and follow-up projects.
 - **`Notes` sheet:** profile, verdict legend, assumptions and caveats.
 
-Columns A-J are the original ones (Name, Our status, Window, Last day to apply, When to apply, Link, Max amount (SEK), Amount note, Who can apply / catch, Scope). Columns K-S were added on 11 Nov 2026:
+Columns, left to right (re-laid out 11 Nov 2026):
 
 | Column | Meaning |
 |---|---|
-| Gustaf (26, Sundbyberg) / Axel (24, Göteborg) | Yes, No, If joins, or Unclear for each person |
+| Name, Our status | Grant name; "Sent <date>" once applied |
+| Will we apply? | Dropdown for you: Yes, Maybe, No, Applied |
+| Priority | 1 = do first, 2 = worth it, 3 = only if time; empty for applied, not eligible, timing or via EfA |
+| Chance, Why this chance | Claude's 1-5 judgement of the odds and why |
 | Verdict | Applied, Both, Gustaf only, Axel only, If you join first, Unclear - ask, Timing doesn't fit, Via EfA only, Not eligible |
-| Why (eligibility check) | The rule that decided the verdict |
-| What to submit | Attachments and forms, where known |
-| Apply as | Joint, Each (separately), Nominated, or Via organisation |
-| Type | Stipend, Travel grant, Research grant, Prize, Loan, Insurance, In-kind, Org grant |
-| Next step | What to do and when |
-| Last checked | When the row was last verified |
+| Together or individually | Together = one joint application; Individually = each applies; Nominated; Via EfA |
+| Last day to apply, Days left | Deadline and a formula counting days from today (red at 14 or fewer, yellow at 15-45) |
+| Window, When to apply | Open now, Upcoming, Rolling, Unknown, Passed; the full date text |
+| Max amount (SEK), Amount note | Rough SEK for sorting; details |
+| Membership needed, Membership cost | What you must join and the student price |
+| Gustaf (26, Sundbyberg), Axel (24, Göteborg) | Yes, No, If joins, Unclear |
+| Why (eligibility check), What to submit, Next step | Reasoning, attachments, action |
+| Who can apply / catch, Type, Scope, Link, Last checked | Original details |
 
-Formatting: rows marked "Not eligible" are struck through in grey and sorted to the bottom of each sheet. "Timing doesn't fit" and "Via EfA only" rows are grey italic. Yellow rows are open now and green rows have been applied for. Hover over a date to see its note and source. Use the filter on the Verdict column to hide struck rows.
+Rows are sorted by Priority, then deadline. To sort by deadline instead, use the filter arrow on "Last day to apply" or "Days left".
+
+Formatting: rows marked "Not eligible" are struck through in grey and sorted to the bottom of each sheet. "Timing doesn't fit" and "Via EfA only" rows are grey italic. Yellow names are open now and green names have been applied for. Hover over a date to see its note and source.
+
+Membership prices found: ST student free; Sveriges Ingenjörer student 180 SEK/year; Animal Behavior Society student USD 40/year; American Society of Mammalogists student USD 25/year; Sigma Xi student USD 50/year + USD 20 initiation (optional). Studentlund (needed for nation funds and AF) doesn't publish its fee online, so ask a nation.
 
 Verdict counts on 11 Nov 2026:
 
