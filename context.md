@@ -28,6 +28,9 @@ Applied so far:
 - **Sveriges Ingenjörers Miljöfond:** sent 10 Nov 2026. Everything is in `Sveriges-Ingenjorers-Miljofond/`.
 - **ST:s internationella stipendium:** sent 11 Nov 2026 to magnus.runsten@st.org as one joint application. Everything is in `ST-internationellt-stipendium/`. ST's English page says 5,000-10,000 SEK per person, so don't expect 40,000.
 
+In progress:
+- **Animal Behavior Society Student Research Grant:** 8-page draft in Gustaf's name in `ABS-Student-Research-Grant/`, due 15 Dec 2026. Placeholders and a to-do list are in its `ansokan.md`. Only one applicant per proposal, so Axel is listed as collaborator.
+
 Each grant you apply for gets its own folder named after it, holding `ansokan.md` and copies of the files sent.
 
 ## The workbook (`stipendier.xlsx`)
