@@ -17,8 +17,28 @@ Applicant: **Gustaf Jensen** (draft written in his name). Amount: USD 500-2,000;
   - Page 8: Animal Care Questionnaire
 - Arial 11 pt, single spacing, 2.5 cm margins, page numbers 1-8 at the bottom centre, each heading on its own line.
 - No salary, overhead or tuition. Items over USD 500 must be justified. Travel at actual cost.
-- The DEI statement is scored. Avoid jargon: reviewers come from all of animal behaviour.
-- Optional: ABS's Graduate Liaison Early Proposal (GLEP) review gives feedback on drafts sent by **15 Nov 2026**. It is tight, but if the placeholders are filled by then it is free feedback before the real deadline.
+- Avoid field-specific jargon: reviewers come from all of animal behaviour. ABS also advises getting input on drafts and having a senior scientist read the final version.
+- Optional: ABS's Graduate Liaison Early Proposal (GLEP) service edits English (grammar and word choice only, not science) for final drafts sent by **15 Nov 2026, 23:59 PST**.
+
+## What each section must contain (from the ABS page, checked 11 Nov 2026)
+
+| Section | ABS asks for | Where we cover it |
+|---|---|---|
+| Summary | One paragraph, max 300 words: the work, the question, conceptual significance, intellectual merit and originality | 269 words |
+| Introduction | Background with classic and recent papers, the study organism, pilot data, why the system suits the question, why it matters to the field and more broadly. Keep ABS-funded work separate from other research | Method history (Fortin 2005 to Forrest 2026), minerals, study system, Vader 2023 pilot data, "What ABS would fund" |
+| Hypotheses | List of specific hypotheses | H1-H5 |
+| Proposed Research | Methods, statistics, relevant experience, logistics, timetable | Data, Analysis, Field validation, Experience and support, Timetable |
+| Predicted Outcomes | How alternative results are interpreted, as if/then statements | One if/then bullet per hypothesis |
+| Importance | Conclusions the study can support and their relevance to animal behaviour | Own section |
+| DEI statement | Required and scored separately (0-5). Three areas: (1) experiences that shaped your path, (2) past and planned work that increases participation of under-represented groups, (3) past and planned contributions to diversity in research, teaching or mentoring, including within ABS | Peru/Amazon, orientation weeks, leadership; workshop, co-authorship, open guide, ABS mentoring |
+| References | Full citations for everything cited | 14 references |
+| Budget (p5) | Itemised, justified, total research budget, other funds available, other grant applications | All five parts |
+| CV (p6-7) | Concise, max 2 pages: education with degree dates and advisors, publications, awards, grants, presentations | Awards left out since there are none |
+| Animal care (p8) | Yes/no on endangered species, disturbing wild populations, permits, captivity, pain, certifying organisation; read the ASAB/ABS guidelines first | All seven |
+
+**Scoring** (<https://www.animalbehaviorsociety.org/web/downloads/ABS_Scoring_system.pdf>): research 1-10 (study design, technique choice, novelty, expected impact) and DEI 0-5. For DEI, 5 needs current activities, concrete past achievements and future plans that are creative; 4 has the same but not creative; 3 is missing one of the three; 2 is missing two. Reviewers write 2-4 sentences on DEI.
+
+Successful past proposals: <https://spltrak.box.com/s/e0peoxzi5ds971cuckxjv102xt9xt83t>
 
 ## Files
 
@@ -37,9 +57,8 @@ Content is taken from the project plan (`Goal_Document___Project_Plan_v2.pdf`) a
 ## To do before sending
 
 - [ ] Join ABS as a student member (USD 40)
-- [ ] DEI statement (page 3): check the sentence about the Peru exchange and the orientation weeks, make it yours, remove the red note
-- [ ] Budget (page 5): confirm how the rest is paid (savings, CSN) and remove the red note
-- [ ] CV (pages 6-7): built from `CV_Gustaf_Jensen.pdf`; add any awards or keep "None yet"
+- [ ] DEI statement (page 4): check you stand behind the plans (workshop at camp, co-authorship for Botswana staff, open guide, ABS mentoring), remove the red note
+- [ ] CV: fill in years for military service and SATS Future Leader (red)
 - [ ] Check exchange rates and update the USD figures if they have moved
 - [ ] After every edit, check the PDF is still exactly 8 pages and the Overleaf log has no "ABS layout" warning
 - [ ] Then make Axel's version (`Axel.tex`)

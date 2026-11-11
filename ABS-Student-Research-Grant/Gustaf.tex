@@ -62,58 +62,62 @@
 
 % =====================================================================
 % PAGES 1-4: RESEARCH PROPOSAL
+% Written for reviewers from all of animal behaviour: every technical
+% term is introduced with what it is, a plain example and why it helps.
 % =====================================================================
 {\bfseries Modelling and simulating elephant movement with step selection functions: do mineral needs steer bull elephants in the Makgadikgadi, Botswana?\par}
 \vspace{2pt}
 Applicant: Gustaf Jensen, MSc student, Lund University, Sweden. Collaborator: Axel Langenskiöld (MSc student, Lund University). Supervisors: Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics), Lund University. Research partner: Elephants for Africa, Botswana (Dr Kate Evans).
 
 \section{Summary}
-Where an animal moves reflects decisions about which resources to seek and which risks to avoid. For African savanna elephants (\textit{Loxodonta africana}), water and forage are well-established drivers of movement, but the role of minerals is far less understood, even though elephants actively eat salty soil where their diet lacks sodium (Holdø et al.\ 2002) and sodium may limit megaherbivores across Africa (Abraham et al.\ 2025). The Makgadikgadi in Botswana, a landscape of salt pans where bull elephants have returned in large numbers since the Boteti River began flowing again in 2009, offers an unusually clear setting to ask whether mineral needs shape movement decisions. Using existing GPS data from around ten bulls tracked hourly by Elephants for Africa since 2022, I will test whether bulls select mineral-rich areas once water and vegetation are accounted for, whether this selection changes between seasons and among individuals, and whether the corridors bulls use coincide with mineral-rich sites. I will use integrated step selection functions with individual variation and a recent deep learning extension, and evaluate them by predicting each bull's location 1 to 12 months ahead on data not used for fitting. A small soil sampling campaign along the predicted corridors will test whether the literature-based mineral maps reflect conditions on the ground. The work links nutritional ecology to individual movement decisions in a long-lived social mammal, and its seasonal maps of likely elephant presence will support human-elephant coexistence.
+Where an animal moves reflects decisions about which resources to seek and which risks to avoid. For African savanna elephants (\textit{Loxodonta africana}), water and food are well-known drivers of movement, but the role of minerals is far less understood, even though elephants eat salty soil where their diet lacks sodium (Holdø et al.\ 2002) and sodium may limit large herbivores across Africa (Abraham et al.\ 2025). The Makgadikgadi in Botswana, a landscape of salt pans where bull elephants have returned in large numbers since the Boteti River began flowing again in 2009, offers an unusually clear setting to ask whether mineral needs shape movement decisions. Using existing GPS data from around ten bulls tracked hourly by Elephants for Africa since 2022, I will test whether bulls choose mineral-rich areas once water and vegetation are accounted for, whether this choice changes between seasons and among individuals, and whether the routes bulls travel coincide with mineral-rich sites. I will use step selection models, which compare each step a bull took with the steps it could have taken, including a version that gives each bull its own preferences and a recent deep learning version. Each model is judged by how well it predicts where a bull will be 1 to 12 months ahead, on data it has never seen. A small soil sampling campaign along the predicted routes will test whether the mineral maps match conditions on the ground. The work links nutrition to individual movement decisions in a long-lived social mammal, and its seasonal maps of where bulls are likely to be will support people and elephants living side by side.
 
 \section{Introduction}
-Movement ecology treats each step an animal takes as a choice among the places it could reach. Step selection functions (SSFs) formalise this by comparing each observed step with random steps available from the same starting point, estimating how environmental conditions make a step more or less likely to be chosen (Fortin et al.\ 2005). Integrated SSFs (iSSFs) estimate movement and habitat selection jointly (Avgar et al.\ 2016), mixed-effects iSSFs capture how individuals differ (Muff et al.\ 2020), and fitted models can be simulated forward to map where animals are likely to be and which corridors they use (Signer et al.\ 2017; Osipova et al.\ 2019). A recent deep learning SSF (deepSSF) learns non-linear responses directly from environmental maps and predicted buffalo movement better than a conventional iSSF (Forrest et al.\ 2026).
+\textbf{How movement decisions are studied.} A common way to ask why animals go where they do is the step selection function (SSF; Fortin et al.\ 2005). An SSF is a statistical model that treats each step an animal takes as a choice. For example, a collar shows that a bull walked 2\,km north between 14:00 and 15:00, but from the same starting point he could have walked to many other places. The SSF compares the step he took with ten steps he could have taken. If the chosen steps more often lead towards salt pans than the alternatives do, the model concludes that bulls prefer salt pans and estimates how strong that preference is compared with water or vegetation. The advantages are that the animal is only compared with places it could actually reach in that hour, and that the model needs nothing more than GPS positions and maps.
 
-Herbivores need sodium, but most plants contain little of it. Elephants compensate through geophagy, and soil eating increases where dietary sodium is low (Holdø et al.\ 2002). A continental analysis recently suggested that sodium constrains megaherbivore communities and warned that animals travelling far for salt may come into more frequent conflict with people (Abraham et al.\ 2025). Yet mineral sources are rarely included when elephant movement is modelled, so it is unknown how much they shape where elephants go relative to water and vegetation.
+Three extensions are used here. An \textit{integrated} SSF (iSSF; Avgar et al.\ 2016) also learns how far and in which direction bulls usually walk in an hour. This means the model can be run forward as a simulation: virtual bulls walk the landscape thousands of times, and places that many of them pass reveal likely corridors (Signer et al.\ 2017; Osipova et al.\ 2019). A \textit{mixed-effects} iSSF (Muff et al.\ 2020) gives each bull its own preferences while learning from all bulls together, so one unusual bull does not distort the overall result. A \textit{deep learning} SSF (deepSSF; Forrest et al.\ 2026) replaces the hand-written formula with a neural network that finds patterns in the maps by itself, for example that salt pans matter only when water is far away. It predicted buffalo movement better than an iSSF but is harder to interpret, which is why I compare both.
 
-\textbf{Study system.} Botswana holds the world's largest elephant population, and elephants increasingly move through farmland. Between 2018 and 2022, elephants caused 41\% of wildlife damage to crops, boreholes, water tanks and fences (ATC News 2023). In the Makgadikgadi, Elephants for Africa has studied male elephants since 2012 (Evans 2019); its collared bulls spend about three times as much time outside protected areas as inside (Elephants for Africa 2025). One aim of its GPS project was to learn whether mineral needs drive the bulls' movements (AZA n.d.), but this has not yet been tested. Bulls suit the question well: they range widely and independently, and the salt pans provide strong spatial contrast in mineral availability.
+\textbf{Minerals.} Herbivores need sodium, but most plants contain little of it. Elephants make up for this by eating soil, and they do so more where their food is low in sodium (Holdø et al.\ 2002). A continental analysis recently suggested that sodium limits large herbivore communities and warned that animals travelling far for salt may come into conflict with people more often (Abraham et al.\ 2025). Yet mineral sources are rarely included when elephant movement is modelled, so it is unknown how much they shape where elephants go compared with water and vegetation.
 
-\textbf{Pilot data.} Vader (2023) analysed the first ten months (Aug 2022 to Jun 2023) of hourly GPS data from ten bulls. Home range sizes varied widely, bulls selected shrubland and roads and avoided crops and bare ground, and one bull moved faster and ranged wider during musth. This shows the data are suitable for step selection and that individual variation must be modelled. No analysis has yet included minerals or used the full 2022 to 2025 dataset.
+\textbf{Study system.} Botswana holds the world's largest elephant population, and elephants increasingly move through farmland: between 2018 and 2022 they caused 41\% of wildlife damage to crops, boreholes, water tanks and fences (ATC News 2023). In the Makgadikgadi, Elephants for Africa has studied male elephants since 2012 (Evans 2019); its collared bulls spend about three times as much time outside protected areas as inside (Elephants for Africa 2025). One aim of its GPS project was to learn whether mineral needs drive the bulls' movements (AZA n.d.), but this has not yet been tested. Bulls suit the question well: they range widely and independently, and the salt pans give a strong contrast in mineral availability.
 
-\textbf{What ABS would fund.} The models are fitted to existing data as part of my master's thesis. The ABS grant would fund the field component in Botswana: working at Elephants for Africa's research camp to build and check the environmental layers with its staff, and collecting soil samples along the predicted corridors to test the mineral maps against measurements.
+\textbf{Pilot data.} Vader (2023) analysed the first ten months (Aug 2022 to Jun 2023) of hourly GPS data from ten bulls. Home ranges varied widely in size, bulls chose shrubland and roads and avoided crops and bare ground, and one bull moved faster and further during musth, a period of raised hormones and aggression in adult males. The data are therefore suitable for step selection, and differences between individuals must be modelled. No analysis has yet included minerals or used the full 2022 to 2025 data.
+
+\textbf{What ABS would fund.} The models are fitted to existing data as part of my master's thesis. The ABS grant would fund the field component in Botswana: working at Elephants for Africa's research camp to build and check the environmental maps with its staff, and collecting soil samples along the predicted corridors to test the mineral maps against measurements.
 
 \section{Hypotheses}
 \begin{itemize}
-  \item \textbf{H1 Mineral selection:} after accounting for water and vegetation, bulls select steps towards mineral-rich areas (salt pans and soils high in sodium and calcium).
-  \item \textbf{H2 Seasonality:} the strength of mineral selection differs between wet and dry seasons.
-  \item \textbf{H3 Individual variation:} bulls differ consistently in how strongly they select mineral-rich areas.
-  \item \textbf{H4 Corridors:} corridors where many simulated tracks pass contain more mineral-rich areas than expected from water and vegetation alone.
-  \item \textbf{H5 Prediction:} including minerals improves predictions of bull locations 1, 3, 6 and 12 months ahead, and more flexible models (deepSSF) improve on the iSSF at some but not all time horizons.
+  \item \textbf{H1 Mineral selection:} after accounting for water and vegetation, bulls choose steps towards mineral-rich areas (salt pans and soils high in sodium and calcium).
+  \item \textbf{H2 Seasonality:} the strength of this preference differs between the wet and dry seasons.
+  \item \textbf{H3 Individual variation:} bulls differ consistently in how strongly they prefer mineral-rich areas.
+  \item \textbf{H4 Corridors:} corridors used by many simulated bulls contain more mineral-rich areas than expected from water and vegetation alone.
+  \item \textbf{H5 Prediction:} adding minerals improves predictions of where bulls will be 1, 3, 6 and 12 months ahead, and the deepSSF beats the iSSF at some but not all of these horizons.
 \end{itemize}
 
 \section{Proposed Research}
-\textbf{Data.} GPS fixes from around ten adult bulls collared by Elephants for Africa (2022 to 2025, hourly) are cleaned and resampled to a regular step length. Environmental layers are built from open satellite data: surface water, vegetation greenness (NDVI), salt pans, distance to the Boteti River and boreholes, and farmland. Mineral layers combine 30\,m African soil nutrient maps (Hengl et al.\ 2021) with a literature review of soil and geological maps, published studies and mining-industry data.
+\textbf{Data.} GPS positions from around ten adult bulls collared by Elephants for Africa (2022 to 2025, hourly) are cleaned and resampled to regular one-hour steps. Environmental maps are built from open satellite data: surface water, vegetation greenness (NDVI, a satellite measure of how green plants are), salt pans, distance to the Boteti River and boreholes, and farmland. Mineral maps combine 30\,m African soil nutrient maps (Hengl et al.\ 2021) with a review of soil and geological maps, published studies and mining-industry data.
 
-\textbf{Analysis.} (1) A classical SSF fitted by conditional logistic regression with 10 to 20 random steps per observed step. (2) A mixed-effects iSSF (Muff et al.\ 2020) that adds step length and turning angle and gives each bull its own selection coefficients, with season-by-mineral interactions. (3) A deepSSF (Forrest et al.\ 2026). H1 is tested by the sign and 95\% confidence interval of the mineral coefficients and by comparing models with and without mineral layers. H2 is tested by the season interaction and H3 by the among-individual variance of the mineral slopes, related to age class and musth where Elephants for Africa's records allow. For H4, I simulate many tracks from the fitted iSSF (Signer et al.\ 2017), define corridors as cells crossed by many tracks, and compare their mineral values with non-corridor cells using a permutation test that keeps water and vegetation fixed. For H5, each bull is held out in turn and the final year of data is kept as a test period; predictive skill is the log-likelihood of observed positions under the predicted maps, compared with a seasonal baseline of where bulls were in the same season before.
+\textbf{Analysis.} Each observed step is paired with 10 to 20 random steps from the same starting point, and the three models above are fitted in order of flexibility: a basic SSF, a mixed-effects iSSF and a deepSSF. The first two use conditional logistic regression, the standard way to compare one choice with its alternatives. \textit{H1} is supported if the mineral preference is positive with a 95\% confidence interval above zero, and if models with minerals fit better than models without. \textit{H2} is tested by letting the mineral preference differ by season, and \textit{H3} by how much the bulls' individual preferences spread, related to age and musth where Elephants for Africa's records allow. For \textit{H4}, I simulate thousands of tracks and define corridors as map cells crossed by many of them. A permutation test then asks whether this could be chance: the corridors are moved at random many times to places with similar water and vegetation, and H4 is supported if the real corridors are more mineral-rich than almost all random ones. For \textit{H5}, the test works like checking a weather forecast against the weather that came. Each bull is left out in turn and the last year of data is held back; the models then predict where that bull will be, and are scored by how much probability they gave the places it actually went. They are compared with a simple baseline that assumes bulls return to where they were in the same season before.
 
-\textbf{Field validation.} Together with Elephants for Africa staff, I will collect up to 20 topsoil samples (0 to 20\,cm) at corridor sites the bulls use often and at nearby comparison sites, taking about one field day. Samples are exported under permit for laboratory analysis funded by Elephants for Africa, and the measured values are compared with the mapped ones. No animals are handled or approached.
+\textbf{Field validation.} Together with Elephants for Africa staff, I will collect up to 20 topsoil samples (0 to 20\,cm) at corridor sites the bulls use often and at nearby comparison sites, in about one field day. Samples are exported under permit for laboratory analysis funded by Elephants for Africa, and the measured values are compared with the mapped ones. No animals are handled or approached.
 
-\textbf{Experience and support.} I specialise in machine learning at Lund University, with coursework in machine learning, artificial intelligence and mathematical statistics. At Saab I processed and analysed large datasets and wrote statistical simulation software, and I have trained and compared deep neural networks (PyTorch) on human motion data. Axel Langenskiöld, also specialising in machine learning, shares the modelling. Johan Lindström works on spatial statistics, Jonas Skeppstedt supervises the computing work, and Kate Evans, founder and director of research at Elephants for Africa, contributes expertise on bull elephants. Research officer Thatayaone Motsentwa supports the GPS data and fieldwork. We are based at Elephants for Africa's camp near Khumaga, and a research permit has been applied for with the Ministry of Environment and Tourism.
+\textbf{Experience and support.} I specialise in machine learning, with courses in machine learning, artificial intelligence and mathematical statistics. At Saab I analysed large datasets and wrote statistical simulation software, and I have trained and compared neural networks on human motion data (golf swings), a task much like classifying animal movement. Axel Langenskiöld, also specialising in machine learning, shares the modelling. Johan Lindström works on spatial statistics, Jonas Skeppstedt supervises the computing, and Kate Evans, founder and director of research at Elephants for Africa, brings long experience of bull elephants. Research officer Thatayaone Motsentwa supports the GPS data and fieldwork. We are based at Elephants for Africa's camp near Khumaga, and a research permit has been applied for with the Ministry of Environment and Tourism.
 
-\textbf{Timetable.} Dec 2026 to Feb 2027: data preparation and mineral literature review (Sweden). 15 Feb to 15 May 2027: model building, field validation and soil sampling in Botswana. May to Jun 2027: evaluation and thesis writing. Jun 2027: thesis and seasonal maps delivered to Elephants for Africa and the Department of Wildlife and National Parks.
+\textbf{Timetable.} Dec 2026 to Feb 2027: data preparation and mineral review (Sweden). 15 Feb to 15 May 2027: model building, field validation and soil sampling in Botswana. May to Jun 2027: evaluation and thesis writing. Jun 2027: thesis and seasonal maps delivered to Elephants for Africa and the Department of Wildlife and National Parks.
 
 \section{Predicted Outcomes}
 \begin{itemize}
-  \item If mineral coefficients are positive and improve held-out prediction (H1, H5), mineral needs shape bull movement decisions and mineral sites should be considered in coexistence planning, for example when placing salt licks. If they have no effect, movement is explained by water and forage, or mineral effects are masked because pans also hold water; I will then test pans with and without surface water separately.
-  \item If selection peaks in the wet season (H2), mineral demand is likely highest when bulls eat fresh forage; if it peaks in the dry season, mineral visits may be a side effect of bulls concentrating near the river. No seasonal difference suggests a constant demand.
-  \item If individual variance is large (H3), population maps hide distinct strategies, and individual-based predictions are needed; if small, a population model is enough.
-  \item If corridors coincide with mineral-rich areas (H4), minerals help explain where bulls travel; if not, corridors are shaped by water and terrain. If soil measurements match the maps, the mineral layers are reliable; if not, mineral effects are interpreted cautiously.
+  \item If the mineral preference is positive and improves prediction (H1, H5), mineral needs shape bull movement decisions, and mineral sites should be part of coexistence planning, for example when placing salt licks. If not, movement is explained by water and food, or mineral effects are hidden because pans also hold water; I will then test pans with and without surface water separately.
+  \item If the preference peaks in the wet season (H2), mineral demand is likely highest when bulls eat fresh plants; if it peaks in the dry season, mineral visits may be a side effect of bulls gathering near the river. No difference suggests a constant demand.
+  \item If bulls differ strongly (H3), average maps hide distinct strategies and predictions per bull are needed; if they differ little, one shared model is enough.
+  \item If corridors coincide with mineral-rich areas (H4), minerals help explain where bulls travel; if not, routes are shaped by water and terrain. If soil measurements match the maps, the mineral maps are reliable; if not, mineral effects are interpreted with caution.
 \end{itemize}
 
 \section{Importance of Proposed Research}
-The study tests whether a specific nutrient shapes individual movement decisions in a free-ranging megaherbivore, linking nutritional ecology and movement ecology in a way rarely done for elephants. Comparing classical and deep learning step selection on long-horizon, out-of-sample prediction shows when added model complexity helps explain behaviour. The results also matter for conservation: if minerals draw bulls out of protected areas, managing mineral sources becomes a tool for human-elephant coexistence.
+The study can show whether a single nutrient shapes the day-to-day movement decisions of a free-ranging large mammal, how much those decisions vary between individuals and seasons, and whether they scale up to the routes animals travel. This links nutrition and movement behaviour in a way rarely done for elephants. Comparing classical and deep learning models on long-range prediction also shows when more flexible models give new insight into behaviour. For conservation, if minerals draw bulls out of protected areas, managing mineral sources becomes a tool for people and elephants to live side by side.
 
 \section{Diversity, Equity and Inclusion Statement}
-I came to animal behaviour from computer science, and this project depends on combining knowledge from different backgrounds: our statistical modelling with the long-term field knowledge of Botswana-based researchers. An exchange semester at Pontificia Universidad Católica del Perú, and two years coordinating orientation weeks for more than 200 new students and 70 volunteers, showed me how much a welcoming start decides who stays in a field. \fixme{Gustaf: check this sentence and add your own experiences if you want} The project is designed to build local capacity rather than extract data. We will work alongside Elephants for Africa's Botswana team, train its staff to use the models and maps, and share all code with documentation written for users without programming experience. Results are returned through reports to the Ministry and the Department of Wildlife and National Parks, and the maps can be used in Elephants for Africa's work with the communities around the park. After the thesis, I will keep the tools openly available and support the team in using them.
+During my exchange semester at Pontificia Universidad Católica del Perú, I joined a professor from the university studying butterflies in the Amazon. That is where I fell for what data can reveal about nature, and I want to use what I know for something good. I have also seen how much belonging matters: for two years I coordinated Lund University's orientation weeks, welcoming more than 200 new students and leading 70 volunteers, and as a teaching assistant, squad leader in the Swedish Armed Forces and assistant manager I have supported and led groups of 10 to 25 people. In this project, Elephants for Africa's Botswana-based staff know the elephants and the land far better than we do, so I will (1) run a hands-on workshop at the camp where staff learn to run and update the models themselves, so the analysis stays in Botswana, (2) offer co-authorship to Botswana-based staff who contribute, and (3) publish all code with a step-by-step guide in plain language, so students without a programming background can analyse GPS data. Within ABS, I will share this guide with student members and offer to mentor students from field biology who want to start using movement models. \fixme{Gustaf: check that you stand behind points 1 to 3 and the ABS plan}
 
 \section{References}
 \begin{list}{}{\leftmargin=1.2em \itemindent=-1.2em \itemsep=0pt \parsep=0pt \topsep=0pt}
@@ -145,7 +149,7 @@ All amounts are actual out-of-pocket costs for my part of the field component, c
 \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{4.3cm}|>{\raggedright\arraybackslash}X|>{\raggedleft\arraybackslash}p{2.2cm}|}
 \hline
 \textbf{Item} & \textbf{Justification} & \textbf{Request (USD)} \\ \hline
-Research camp fees, Elephants for Africa (part) & Accommodation and meals at the only base inside the study area, needed to work with the field team, check the environmental layers and reach sampling sites. Full cost BWP 57,700 (about USD 4,400) for 15 Feb to 15 May. & 1,500 \\ \hline
+Research camp fees, Elephants for Africa (part) & Accommodation and meals at the only base inside the study area, needed to work with the field team, check the environmental maps and reach sampling sites. Full cost BWP 57,700 (about USD 4,400) for 15 Feb to 15 May. & 1,500 \\ \hline
 Soil sampling field day & Vehicle with Elephants for Africa driver (BWP 3,110) and park ferry (BWP 400) for one day of sampling along predicted corridors. & 270 \\ \hline
 Park research fee (DWNP) & Required to work inside Makgadikgadi Pans National Park (BWP 3,000). & 230 \\ \hline
 \textbf{Total requested from ABS} & & \textbf{2,000} \\ \hline
@@ -164,17 +168,17 @@ Laboratory analysis of soil samples & Funded by Elephants for Africa \\ \hline
 \end{tabularx}
 
 \section{Other funds available}
-No funds are available from the supervisors or the department. GPS data, staff knowledge and laboratory analysis are contributed in kind by Elephants for Africa. Remaining costs are paid personally. \fixme{Gustaf: confirm, e.g.\ savings and Swedish student loans}
+The project has no funding from the department or the supervisors. Elephants for Africa contributes the GPS data, staff time and the laboratory analysis in kind. Beyond the two small stipends applied for below, which would not cover the full cost, the remaining costs will be paid from my own savings.
 
 \section{Other grant proposals submitted}
 \begin{itemize}
   \item Sveriges Ingenjörers Miljöfond (LTH), joint with Axel Langenskiöld, SEK 50,000 (about USD 5,000) for the thesis, submitted 10 Nov 2026, pending.
   \item ST international scholarship (Swedish union ST), joint, SEK 5,000 to 10,000 per person, submitted 11 Nov 2026, pending.
-  \item Planned: Anna Whitlock Memorial Fund, Hakon Hansson Foundation travel grant, American Society of Mammalogists Grants-in-Aid. If other awards cover the same costs, the ABS funds will be used for the remaining field costs listed above.
 \end{itemize}
+If either is awarded, the ABS grant will still go to the field costs listed above, which the other awards would not fully cover.
 
 % =====================================================================
-% PAGES 6-7: CURRICULUM VITAE
+% PAGES 6-7: CURRICULUM VITAE (two pages maximum)
 % =====================================================================
 \gotopage{6}
 {\bfseries Curriculum Vitae: Gustaf Jensen\par}
@@ -182,7 +186,7 @@ Lund University, Faculty of Engineering (LTH), Sweden. gustaf.jensen@gmail.com, 
 
 \section{Education}
 \cvitem{MSc in Engineering, Computer Science, Lund University (LTH)}{Aug 2022 -- Jun 2027 (expected)}
-Specialisation in machine learning. Thesis advisors: Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics). Exchange semester at Pontificia Universidad Católica del Perú, Lima.
+Specialisation in machine learning. Thesis advisors: Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics). Exchange semester at Pontificia Universidad Católica del Perú, Lima, including fieldwork on butterflies in the Amazon with a professor from the university.
 Relevant courses: Machine Learning; Artificial Intelligence; Language Technology; Mathematical Statistics; Numerical Analysis; Advanced Algorithms; Sustainability and Resource Use.
 
 \section{Master's thesis}
@@ -213,7 +217,12 @@ GPS data from bull elephants in Botswana, with Elephants for Africa. Research pe
 \begin{itemize}
   \item Led a team of 25 in daily operations; raised customer satisfaction by 30\% by analysing customer behaviour.
 \end{itemize}
+\cvitem{Swedish Armed Forces, Squad Leader, Enköping}{\fixme{year -- year}}
+\begin{itemize}
+  \item Completed squad leader training and led a squad of 10 during military service.
+\end{itemize}
 
+\needspace{5\baselineskip}
 \section{Research projects}
 \cvitem{Machine learning classification of golf swings}{2026, release planned Dec 2026}
 \begin{itemize}
@@ -228,9 +237,6 @@ GPS data from bull elephants in Botswana, with Elephants for Africa. Research pe
 \section{Publications}
 None yet.
 
-\section{Awards and fellowships}
-None yet. \fixme{Gustaf: add any}
-
 \section{Previous and pending grant support}
 \begin{itemize}
   \item Sveriges Ingenjörers Miljöfond, SEK 50,000 (joint), submitted Nov 2026, pending.
@@ -242,13 +248,15 @@ None yet. Planned: thesis presentation at Lund University (Jun 2027) and present
 
 \section{Leadership and teaching}
 \begin{itemize}
+  \item SATS Future Leader, one-year leadership programme \fixme{years}.
+  \item Squad leader training, Swedish Armed Forces, Enköping; led a squad of 10.
   \item Coordinator of the introduction programme, Lund University (2023 and 2024): planned and led orientation weeks for more than 200 new students and 70 volunteers.
+  \item Teaching assistant, Algorithms and Data Structures, Lund University (2025 to 2026).
 \end{itemize}
 
 \section{Skills}
 Python, R, Java, Go, Swift, Scala, SQL; PyTorch, NumPy, scikit-learn, Git, Google Cloud.
 
-% =====================================================================
 % PAGE 8: ANIMAL CARE QUESTIONNAIRE
 % =====================================================================
 \gotopage{8}
