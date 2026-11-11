@@ -11,9 +11,9 @@
 
 - [x] Båda är studentmedlemmar i ST.
 - [x] Gustafs adress och postnummer är ifyllda i blanketten.
-- [ ] Läs igenom blanketten och ändra det som inte stämmer.
-- [ ] Skicka mejlet nedan.
-- [ ] Sätt *Our status* för raden ST i `../stipendier.xlsx` till "Sent", med datumet ni skickade.
+- [x] Läs igenom blanketten och ändra det som inte stämmer.
+- [x] Mejlet skickat 11 nov 2026.
+- [x] Markerad som "Sent 11 Nov 2026" i `../stipendier.xlsx`.
 
 ## Mejl
 

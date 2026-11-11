@@ -1,6 +1,6 @@
 # Context: Botswana thesis funding
 
-Last updated 10 Nov 2026. Grant data was checked on 4 Nov 2026, and deadlines were rechecked on 10 Nov 2026.
+Last updated 11 Nov 2026. Grant data was checked on 4 Nov 2026, and deadlines were rechecked on 10 Nov 2026.
 
 ## Goal
 
@@ -12,13 +12,15 @@ Filter: leave out anything restricted to women or to specific ethnic groups. Mal
 
 `stipendier.xlsx` has 118 unique grants: 75 still open or upcoming, and 43 whose deadline has passed for this thesis.
 
-Applied so far: Sveriges Ingenjörers Miljöfond, sent 10 Nov 2026. The home university is confirmed as LTH (Civilingenjör i Datateknik).
+Applied so far: Sveriges Ingenjörers Miljöfond, sent 10 Nov 2026, and ST:s internationella stipendium, sent 11 Nov 2026. The home university is confirmed as LTH (Civilingenjör i Datateknik).
 
-## Progress as of 10 Nov 2026
+## Progress as of 11 Nov 2026
 
 - **Thesis:** Gustaf Jensen and Axel Langenskiöld, computer science at LTH. Supervisors are Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics), working with Elephants for Africa. In Botswana 15 Feb – 15 May 2027.
 - **Botswana research permit:** the proposal (`MENT_signed.pdf`) and the endorsement letter are signed. `Application_for_Research_Permit_Axel_V2.pdf` is in the folder.
-- **Sveriges Ingenjörers Miljöfond:** sent 10 Nov 2026. The application text and email are in `miljofond-ansokan.md`, and the attached PDF is `Tillampningar_Jensen_Langenskiold.pdf`.
+- **Sveriges Ingenjörers Miljöfond:** sent 10 Nov 2026. Everything is in `Sveriges-Ingenjorers-Miljofond/`: the application text and email in `ansokan.md`, and the attached files.
+- **ST:s internationella stipendium:** sent 11 Nov 2026 to magnus.runsten@st.org as one joint application. Everything is in `ST-internationellt-stipendium/`: the filled form `ST-ansokan-Langenskiold-Jensen.docx`, plus `ansokan.md` and `ansokan.pdf`.
+- **Folders:** each grant you apply for gets its own folder named after it, holding `ansokan.md` and copies of the files sent.
 
 ## The workbook
 
