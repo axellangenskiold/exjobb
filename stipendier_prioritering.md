@@ -9,7 +9,7 @@ Stipendier, fonder och annat utanför Axels lista: [Fler pengakällor](fler_peng
 Av Axels 118 stipendier är ungefär 15 värda att söka. Resten stänger efter exjobbet, kräver ett helt år utomlands eller kräver en koppling ni inte har. Fältarbetet pågår 15 feb – 1 jun 2027, så pengar som beslutas eller betalas ut efter juni hjälper bara som bonus i efterhand.
 
 - **Viktigast nu:** ST:s internationella stipendium (40 000 kr, deadline 12 nov). Studentmedlemskap i ST är gratis och ämnet passar.
-- **Budget:** EfA-vistelsen kostar ca £12 400 för er två, ungefär 160 000 kr (omräknat med ca 13 kr/£), plus flyg, försäkring och tillstånd.
+- **Budget:** EfA-vistelsen kostar ca £6 200 för er två (£35 per person och natt i 89 nätter), ungefär 80 000 kr, plus flyg, försäkring och tillstånd.
 - **Realistiskt:** stipendierna täcker troligen en del, inte allt. De flesta svenska fonder ger 5 000–50 000 kr och ingen hittad fond riktar sig till afrikansk naturvård.
 
 Rangordningen väger belopp, chans (hur väl ni passar, antal sökande) och om beslutet kommer i tid. Kraven är kollade på respektive webbsida 5 nov 2026.

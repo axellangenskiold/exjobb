@@ -1,6 +1,6 @@
 # Context: Botswana thesis funding
 
-Last updated 5 Nov 2026. Grant data was checked on 4 Nov 2026.
+Last updated 10 Nov 2026. Grant data was checked on 4 Nov 2026, and deadlines were rechecked on 10 Nov 2026.
 
 ## Goal
 
@@ -10,20 +10,23 @@ Filter: leave out anything restricted to women or to specific ethnic groups. Mal
 
 ## Status
 
-The list is finished: `stipendier.xlsx` has 118 unique grants. Nobody has applied to anything yet, as far as this file records.
+`stipendier.xlsx` has 118 unique grants: 75 still open or upcoming, and 43 whose deadline has passed for this thesis.
 
-**Open question:** is the home university Lund/LTH? This was only inferred from the `eitn21` folder and has not been confirmed. If it's wrong, the 89 Lund/LTH rows need replacing with that university's funds.
+Applied so far: Sveriges Ingenjörers Miljöfond, sent 10 Nov 2026. The home university is confirmed as LTH (Civilingenjör i Datateknik).
 
 ## Progress as of 10 Nov 2026
 
 - **Thesis:** Gustaf Jensen and Axel Langenskiöld, computer science at LTH. Supervisors are Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics), working with Elephants for Africa. In Botswana 15 Feb – 15 May 2027.
 - **Botswana research permit:** the proposal (`MENT_signed.pdf`) and the endorsement letter are signed. `Application_for_Research_Permit_Axel_V2.pdf` is in the folder.
-- **Sveriges Ingenjörers Miljöfond:** due 10 Nov 2026. The application is in `miljofond-ansokan.md`, with a checklist, the final answers and the email.
+- **Sveriges Ingenjörers Miljöfond:** sent 10 Nov 2026. The application text and email are in `miljofond-ansokan.md`, and the attached PDF is `Tillampningar_Jensen_Langenskiold.pdf`.
 
 ## The workbook
 
-- **`Stipends` sheet:** Name, When to apply, Link, Max amount (SEK), Amount note, Who can apply / catch, Scope. Sorted by highest stated amount. Yellow rows are open now, or open or close before 2027.
+- **`Stipends` sheet:** 75 grants that are still open or upcoming, sorted by last day to apply, soonest first. Columns: Name, Our status, Window, Last day to apply, When to apply, Link, Max amount (SEK), Amount note, Who can apply / catch, Scope. Yellow rows are open now and green rows have been applied for. Hover over a date to see its note and source.
+- **`Passed` sheet:** 43 grants with no application round closing before 30 Jun 2027.
 - **`Notes` sheet:** assumptions, exclusions and caveats.
+
+The counts below cover all 118 grants across both sheets.
 
 | Measure | Rows |
 |---|---:|
@@ -38,16 +41,7 @@ The list is finished: `stipendier.xlsx` has 118 unique grants. Nobody has applie
 
 ## Nearest dates
 
-| Date | Grant | Amount (SEK) | Check first |
-|---|---|---:|---|
-| 10 Nov 2026 | Sveriges Ingenjörers Miljöfond (LTH) | 50,000 | KTH's version requires theses abroad to benefit Sweden, so ask stipendier@lth.lu.se whether Botswana qualifies |
-| 12 Nov 2026 | ST internationellt stipendium | 40,000 | ST student membership required; the amount may be shared |
-| 1–30 Nov 2026 | Felix Neubergh | not published | Maximum age 25 |
-| 15 Nov 2026 – 18 Jan 2027 | Sixten Gemzéus | 26,820 | About a full academic year abroad; amount comes from a third-party guide |
-| 28 Nov 2026 – 20 Feb 2027 | Markussens Studiefond | not published | Kronoberg-born applicants |
-| 1 Dec 2026 – 1 Feb 2027 | Helge Ax:son Johnson | not published | See the catch column |
-
-Also open now: Längmanska kulturfonden (75,000 SEK, until 15 Jan 2027), Uppfostringsfonderna (35,000 SEK, until 31 Mar 2027) and Karriärstipendiet (15,000 SEK, current round until 31 Mar 2027).
+See the top of the `Stipends` sheet, which is sorted by last day to apply.
 
 ## Largest grants
 
@@ -71,7 +65,4 @@ Also open now: Längmanska kulturfonden (75,000 SEK, until 15 Jan 2027), Uppfost
 
 ## Rebuilding the list
 
-The build scripts are in a temporary folder and may be deleted, so treat `stipendier.xlsx` as the source of truth and edit it directly if they're gone.
-
-- Grant data: `/private/tmp/claude-501/-Users-axellangenskiold-exjobb/f03419e5-3a82-4027-9f46-f7977768d7a6/scratchpad/verified.py`
-- Workbook builder with self-checks: `/private/tmp/claude-501/-Users-axellangenskiold-exjobb/f03419e5-3a82-4027-9f46-f7977768d7a6/scratchpad/build.py`
+The original build scripts were in a temporary folder and have been deleted. `stipendier.xlsx` is the source of truth, so edit it directly.

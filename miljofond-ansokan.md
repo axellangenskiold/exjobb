@@ -11,7 +11,7 @@ Applying jointly: Gustaf Jensen and Axel Langenskiöld.
 - [x] Ladok transcript for Gustaf: `Grade transcript.pdf`
 - [x] Ladok transcript for Axel: `Resultatintyg.pdf`
 - [ ] Join Sveriges Ingenjörer as student members, since members get priority: <https://www.sverigesingenjorer.se/ansokan/>
-- [ ] Send the email below with four attachments
+- [x] Email sent 10 Nov 2026
 
 Not needed for this application: the signed MENT proposal, the endorsement letter and the research-permit application, which are for the Botswana permit.
 
