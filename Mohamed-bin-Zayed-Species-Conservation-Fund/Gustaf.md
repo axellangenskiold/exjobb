@@ -46,9 +46,9 @@ Paste each answer into the matching field of the online form (<https://applicati
 >
 > **Mission:** to give conservation authorities and communities in the Makgadikgadi reliable, seasonal maps of where bull elephants are likely to move, and to find out whether the bulls' need for minerals such as sodium draws them along particular routes, including out of protected areas and into farmland.
 >
-> **Objectives:** (1) model how bull elephants choose where to move, using existing hourly GPS data from around ten bulls collared by Elephants for Africa since 2022; (2) test whether mineral-rich soils and salt pans shape those choices beyond water and vegetation; (3) simulate the bulls' movements to identify the corridors they use; (4) check the mineral maps against soil samples collected along the predicted corridors; and (5) hand the maps, code and training over to Elephants for Africa and the Department of Wildlife and National Parks.
+> **Objectives:** (1) model how bull elephants choose where to move, using existing hourly GPS data from ten bulls tracked by Elephants for Africa from August 2022 to June 2025; (2) test whether mineral-rich soils and salt pans shape those choices beyond water and vegetation; (3) simulate the bulls' movements to identify the corridors they use; (4) check the mineral maps against soil samples collected along the predicted corridors; and (5) hand the maps, code and training over to Elephants for Africa and the Department of Wildlife and National Parks.
 >
-> **Founded:** the project starts in February 2027 and forms our master's thesis, supervised by Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics) at Lund University, with Dr Kate Evans of Elephants for Africa as research partner. We will work from Elephants for Africa's research camp near Khumaga on the Boteti River from 15 February to 1 June 2027.
+> **Founded:** the project starts in February 2027 and forms our master's thesis, supervised by Jonas Skeppstedt (Computer Science) and Johan Lindström (Mathematical Statistics) at Lund University, with Dr Kate Evans of Elephants for Africa as supervisor. We will work from Elephants for Africa's research camp near Khumaga on the Boteti River from 15 February to 1 June 2027.
 >
 > **Geographic area:** Makgadikgadi Pans National Park, the Boteti River, and the community and farming areas around Khumaga, Central District, Botswana.
 >
@@ -68,7 +68,7 @@ Paste each answer into the matching field of the online form (<https://applicati
 | Axel Langenskiöld | Co-researcher: modelling, evaluation, fieldwork | MSc student, Computer Science (machine learning), Lund University | axel@langenskiold.se |
 | Jonas Skeppstedt | Main supervisor | Senior Lecturer, Department of Computer Science, Lund University | jonas.skeppstedt@cs.lth.se |
 | Johan Lindström | Co-supervisor, spatial statistics | Senior Lecturer and Director of Studies, Mathematical Statistics, Lund University | johan.lindstrom@matstat.lu.se |
-| Dr Kate Evans | Research partner, elephant behaviour | Founder and Director of Research, Elephants for Africa | kate@elephantsforafrica.org |
+| Dr Kate Evans | Supervisor in Botswana, elephant behaviour | Founder and Director of Research, Elephants for Africa | kate@elephantsforafrica.org |
 | Stephanie Kong | Partner organisation lead | Director, Elephants for Africa | **TODO:** email |
 | Thatayaone Motsentwa | GPS data and fieldwork | Research Officer, Elephants for Africa | **TODO:** email |
 
@@ -77,7 +77,7 @@ Paste each answer into the matching field of the online form (<https://applicati
 
 | Organisation | Description of affiliation | Contact name | Email |
 |---|---|---|---|
-| Elephants for Africa (NGO) | Research partner and host: provides the GPS data, field base, staff support and laboratory analysis of soil samples; receives the maps and training | Dr Kate Evans | kate@elephantsforafrica.org |
+| Elephants for Africa (NGO) | Research partner and host: supervision in Botswana (Dr Kate Evans), provides the GPS data, field base, staff support and laboratory analysis of soil samples; receives the maps and training | Dr Kate Evans | kate@elephantsforafrica.org |
 | Lund University, Sweden | Our university; supervision of the thesis | Jonas Skeppstedt | jonas.skeppstedt@cs.lth.se |
 | Ministry of Environment and Tourism, Botswana | Research permit (applied for Nov 2026); receives the final report | **TODO** | **TODO** |
 | Department of Wildlife and National Parks, Botswana | Supplementary permit for work in the national park; receives the seasonal maps | **TODO** | **TODO** |
@@ -114,7 +114,7 @@ Source for 5.4 and 5.5 (checked 11 Nov 2026): Gobush KS, Edwards CTT, Balfour D,
 
 **5.7 Project objectives** (max 200 words)
 
-> 1. Measure what drives bull elephants' movement choices in the Makgadikgadi, using step selection models fitted to hourly GPS data from around ten bulls tracked by Elephants for Africa from 2022 to 2025.
+> 1. Measure what drives bull elephants' movement choices in the Makgadikgadi, using step selection models fitted to hourly GPS data from ten bulls tracked by Elephants for Africa from August 2022 to June 2025.
 > 2. Test whether bulls are drawn to mineral-rich soils and salt pans once water and vegetation are accounted for, and whether this differs between wet and dry seasons and between individual bulls.
 > 3. Simulate bull movement to map the corridors they use, including routes out of the park into farmland, and test whether these corridors are richer in minerals than expected.
 > 4. Test how well the models predict where bulls will be 1, 3, 6 and 12 months ahead, so that authorities know how far ahead the maps can be trusted.
@@ -123,7 +123,7 @@ Source for 5.4 and 5.5 (checked 11 Nov 2026): Gobush KS, Edwards CTT, Balfour D,
 
 **5.8 Relation to previous work** (max 400 words)
 
-> Elephants for Africa has studied male elephants in the Makgadikgadi since 2012, focusing on their social behaviour and competition with people for resources (Evans 2019). In 2022 it collared around ten adult bulls with hourly GPS collars. One aim of that project was to learn whether mineral needs drive the bulls' movements (AZA n.d.), and the collars showed that the bulls spend about three times as much time outside protected areas as inside (Elephants for Africa 2025). A first analysis of ten months of the data (Vader 2023) found that home range sizes vary widely between bulls, that bulls prefer shrubland and roads and avoid crops and bare ground, and that a bull in musth moved faster and further. It did not include minerals. Our project uses the full 2022 to 2025 data and answers the question the collaring was designed for.
+> Elephants for Africa has studied male elephants in the Makgadikgadi since 2012, focusing on their social behaviour and competition with people for resources (Evans 2019). In August 2022 it collared ten adult bulls with hourly GPS collars. One aim of that project was to learn whether mineral needs drive the bulls' movements (AZA n.d.), and the collars showed that the bulls spend about three times as much time outside protected areas as inside (Elephants for Africa 2025). A first analysis of ten months of the data (Vader 2023) found that home range sizes vary widely between bulls, that bulls prefer shrubland and roads and avoid crops and bare ground, and that a bull in musth moved faster and further. It did not include minerals. Our project uses the full 2022 to 2025 data and answers the question the collaring was designed for.
 >
 > Minerals are a known but rarely modelled driver of elephant movement. Elephants eat soil where their food is low in sodium (Holdø et al. 2002), and sodium may limit large herbivores across Africa, with animals travelling far for salt risking more conflict with people (Abraham et al. 2025).
 >
@@ -135,7 +135,7 @@ Source for 5.4 and 5.5 (checked 11 Nov 2026): Gobush KS, Edwards CTT, Balfour D,
 
 **5.11 Next steps after the project** (max 100 words)
 
-> The models, code and a step-by-step guide will stay with Elephants for Africa, whose staff we will train to rerun them as new GPS data arrive, so the corridor maps can be updated every season. The maps go to the Department of Wildlife and National Parks to help plan where to protect water points and place deterrents. If minerals prove to draw bulls out of the park, the next step is a trial of managed mineral sources, such as salt licks inside the park, with Elephants for Africa and the authorities. We will also publish the results.
+> The models, code and a step-by-step guide will stay with Elephants for Africa, whose staff we will train to rerun them as new GPS data arrive, so the corridor maps can be updated every season. The maps go to the Department of Wildlife and National Parks to help plan where to protect water points and place deterrents. If minerals prove to draw bulls out of the park, Elephants for Africa can use the results when advising the authorities on managing mineral sources. We will also publish the results.
 
 **5.12 Importance to your development and your organisation's work** (max 100 words)
 
@@ -196,4 +196,4 @@ Ask Kate before you list her.
 
 **9.3 Additional budget information** (max 200 words)
 
-> The total project budget is about US$11,530. Elephants for Africa contributes in kind: the GPS data from around ten collared bulls, staff time in the field and the laboratory analysis of the soil samples. We have applied to two Swedish funds, Sveriges Ingenjörers Miljöfond (SEK 50,000, about US$5,000, decision pending) and the ST international scholarship (SEK 5,000 to 10,000 per person, pending), and will apply to the Animal Behavior Society Student Research Grant (up to US$2,000) in December 2026. Neither university department nor supervisors fund the fieldwork, and the remaining costs are paid from our own savings. If other awards arrive first, the Fund's grant will cover the remaining field costs listed above, and we will report all co-funding.
+> The total project budget is about US$11,530. Elephants for Africa contributes in kind: the GPS data from ten collared bulls, staff time in the field and the laboratory analysis of the soil samples. We have applied to two Swedish funds, Sveriges Ingenjörers Miljöfond (SEK 50,000, about US$5,000, decision pending) and the ST international scholarship (SEK 40,000, may be shared, pending), and will apply to the Animal Behavior Society Student Research Grant (up to US$2,000) in December 2026. Neither university department nor supervisors fund the fieldwork, and the remaining costs are paid from our own savings. If other awards arrive first, the Fund's grant will cover the remaining field costs listed above, and we will report all co-funding.
