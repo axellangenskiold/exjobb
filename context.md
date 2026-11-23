@@ -1,12 +1,12 @@
 # Context: Botswana thesis funding
 
-Last updated 11 Nov 2026. Grant data was first checked on 4 Nov 2026, deadlines were rechecked on 10 Nov 2026, and on 11 Nov 2026 every row got an eligibility check and about 60 new grants were added from Sweden, Europe, the USA and Africa.
+Last updated 21 Nov 2026. Grant data was first checked on 4 Nov 2026, deadlines were rechecked on 10 Nov 2026, and on 11 Nov 2026 every row got an eligibility check and about 60 new grants were added from Sweden, Europe, the USA and Africa. On 20-21 Nov 2026, 100 more were added: international internships, research and expedition grants, zoo and society grants, compute and data credits, Swedish chambers abroad and nobility funds.
 
 ## Goal
 
-Two students are doing a master's thesis in Botswana on elephant movement and minerals, and they need as much funding as possible. The workbook lists every scholarship, stipend, grant, prize, loan or in-kind support they could apply for, says which of them is eligible, and says what each application needs.
+Two students are doing a master's thesis in Botswana on elephant movement and minerals, and they need as much funding as possible. The workbook lists every scholarship, stipend, grant, prize, loan, internship or in-kind support they could apply for, says which of them is eligible, and says what each application needs.
 
-Filter: leave out anything restricted to women or to specific ethnic groups. Male-only funds are fine and are marked as such.
+Filter: leave out anything restricted to women or to specific ethnic groups. Male-only funds are fine and are marked as such. Nobility funds are included (Scope 'Nobility', Axel only).
 
 ## Who we are (use this for every eligibility check)
 
@@ -47,8 +47,8 @@ Each grant we apply for gets its own folder named after it, holding `ansokan.md`
 
 ## The workbook (`stipendier.xlsx`)
 
-- **`Stipends` sheet:** 120 grants that are open, upcoming, rolling or undated.
-- **`Passed` sheet:** 58 grants whose next round is too late for this thesis, kept for reference and follow-up projects.
+- **`Stipends` sheet:** 236 grants and internships that are open, upcoming, rolling or undated.
+- **`Passed` sheet:** 61 grants whose next round is too late for this thesis, kept for reference and follow-up projects.
 - **`Notes` sheet:** profile, verdict legend, assumptions and caveats.
 
 Columns, left to right (re-laid out 11 Nov 2026):
@@ -69,23 +69,24 @@ Columns, left to right (re-laid out 11 Nov 2026):
 | Why (eligibility check), What to submit, Next step | Reasoning, attachments, action |
 | Who can apply / catch, Type, Scope, Link, Last checked | Original details |
 
-Rows are sorted by Priority, then deadline. To sort by deadline instead, use the filter arrow on "Last day to apply" or "Days left".
+Rows are sorted by deadline (soonest first; from 21 Nov 2026, as asked). Undated rows follow, ordered open now, upcoming, rolling, unknown, and 'Not eligible' rows are at the bottom. To sort by Priority instead, use the filter arrow on "Priority".
 
 Formatting: rows marked "Not eligible" are struck through in grey and sorted to the bottom of each sheet. "Timing doesn't fit" and "Via EfA only" rows are grey italic. Yellow names are open now and green names have been applied for. Hover over a date to see its note and source.
 
 Membership prices found: ST student free; Sveriges Ingenjörer student 180 SEK/year; Animal Behavior Society student USD 40/year; American Society of Mammalogists student USD 25/year; Sigma Xi student USD 50/year + USD 20 initiation (optional). Studentlund (needed for nation funds and AF) doesn't publish its fee online, so ask a nation.
 
-Verdict counts on 11 Nov 2026:
+Verdict counts on 21 Nov 2026:
 
 | Verdict | Stipends | Passed |
 |---|---:|---:|
 | Applied | 2 | 0 |
-| Both | 39 | 0 |
-| Axel only | 3 | 0 |
-| If you join first | 21 | 0 |
-| Unclear - ask | 19 | 1 |
-| Timing doesn't fit | 2 | 45 |
-| Via EfA only | 3 | 1 |
+| Both | 113 | 0 |
+| Axel only | 11 | 0 |
+| Gustaf only | 1 | 0 |
+| If you join first | 26 | 0 |
+| Unclear - ask | 46 | 1 |
+| Timing doesn't fit | 2 | 48 |
+| Via EfA only | 4 | 1 |
 | Not eligible | 31 | 11 |
 
 ## Nearest actions (as of 11 Nov 2026)
@@ -104,6 +105,20 @@ Verdict counts on 11 Nov 2026:
 | 31 Mar 2027 | Hakon Hansson, Gustaf Söderberg (Axel), Karriärstipendiet | Each |
 | 20 Apr 2027 | Herbert & Karin Jacobsons stiftelse | Axel |
 
+## Added 20-21 Nov 2026 (100 rows, Last checked "20 Nov 2026")
+
+- **Internships and traineeships (43):** ESA, CERN, EPFL, ETH, Aalto, OIST, KAUST, NII, Inria, Ai2, EU (JRC, EEA, Blue Book), UN bodies (UNEP, UNEP-WCMC, CITES incl. the MIKE elephant programme, CMS, FAO, Ramsar), IUCN, OECD, World Bank, Save the Elephants, Sida-funded UN Youth Volunteers, Sida JPO, embassy internships, and Swedish chambers of commerce abroad.
+- **Research and expedition grants (20):** Explorers Club, RGS, Aalborg Zoo (up to DKK 150,000), Indianapolis Zoo, Danforth, WILDLABS, SWS, Clay Minerals Society, IEEE CIS, and supervisor-led ones (Climate Change AI, J. Gust. Richert, NAISS).
+- **Nobility (5, Axel only):** Riddarhuset (window 1 Jul - 15 Oct; Lennart von Heijnes fond after the civilingenjör degree; Andrarumsfonden), Finlands Riddarhus and Finlands Adelsförbund (both April and September windows).
+- **In-kind (9):** Earth Engine, Copernicus Data Space, Esri, TPU/AWS/Lambda/Anthropic credits, NAISS.
+- Most student internships require you to stay enrolled for the whole internship, so don't request the degree certificate before a summer/autumn 2027 internship ends.
+
+## Added 21 Nov 2026: 16 with Nov-Dec deadlines (Last checked "21 Nov 2026")
+
+- Mostly small Swedish study-abroad and essay stipends (Sambla, Trygga, Finansis, Morebanker, Likvidum, Bilora, Plus1, Advisa; 5,000-10,000 SEK each). Your Botswana thesis term counts as a full-time term abroad while registered at LU, so say that.
+- Plus the Heidelberg Laureate Forum (open to 11 Feb 2027), Gates Cambridge and Clarendon (only if you want a UK degree), the Japan travel grants that open 1 Dec (Sverige-Japan, Sasakawa; only with OIST/NII), and three weak fits (Kinship, Internet Society, MCW Global).
+- Checked and not eligible: Handelsbanken's Nov/Dec funds (Arne Andersson, Irene & Bo Adolfsson: local only), Sveriges Ingenjörers understödsfond (needs 6 months' membership), Blueberry (own students only), economics-only thesis stipends (KreditKompass, Zensum, Kreditkort24 etc.), ATBC seed grant (closed 6 Oct).
+
 ## Known limitations
 
 - No Swedish grant specifically for elephants or African wildlife was found. The wildlife-specific options are international: Mohamed bin Zayed, Animal Behavior Society, American Society of Mammalogists, Rufford and Idea Wild.
@@ -115,6 +130,8 @@ Verdict counts on 11 Nov 2026:
 - Dates marked "expected", or given only as a season, are inferred from past rounds.
 - Currency is converted roughly for sorting only: 1 USD ~ 10 SEK, 1 EUR ~ 11 SEK, 1 GBP ~ 13 SEK.
 - Karriärföretagen's full grant list is behind a login and wasn't searched.
+- Many of the 21 Nov rows have dates marked 'expected' (from last year's round) or come from aggregators (fundsforngos, European Funding Guide, opportunity sites). The date comment says which; check the funder's page before applying.
+- Nothing found for a Langenskiöld family association fund; Riddarhuset's kungörelse may list family-specific funds.
 
 ## Other files
 
