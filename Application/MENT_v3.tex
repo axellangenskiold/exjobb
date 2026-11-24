@@ -1,0 +1,220 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+
+% Fill in from Jay's letter before sending, then delete this macro's red colour.
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[#1]}}}
+
+\begin{document}
+
+% ---------------------------------------------------------------- title page
+\thispagestyle{empty}
+\begin{center}
+{\large Research proposal\par}
+\vspace{0.6cm}
+{\large Application for a research permit\\
+Ministry of Environment and Tourism, Republic of Botswana\par}
+\vspace{3cm}
+{\LARGE Minerals, movement and corridors of bull elephants in the Makgadikgadi\par}
+\vspace{0.8cm}
+{\large Modelling and predicting elephant movement from GPS data to support human--elephant coexistence\par}
+\end{center}
+\vfill
+
+\textbf{Applicants:}\\
+Gustaf Jensen, MSc student, Lund University, Sweden, +46723020806, gustaf.jensen@gmail.com\\
+Axel Langenskiöld, MSc student, Lund University, Sweden, +46732097084, axel@langenskiold.se
+
+\textbf{Academic supervisors:}\\
+Jonas Skeppstedt, Department of Computer Science, Lund University, jonas.skeppstedt@cs.lth.se\\
+Johan Lindström, Mathematical Statistics, Lund University, johan.lindstrom@matstat.lu.se
+
+\textbf{External co-supervisor:} Kate Evans, Founder and Director of Research, Elephants for Africa, kate@elephantsforafrica.org
+
+\textbf{Local supervisor in Botswana:} Masego Mokobela, Botswana International University of Science and Technology (BIUST)
+
+\textbf{Collaborating research partner:} Elephants for Africa (Botswana NGO no.\ CR12058)
+
+\textbf{Period in Botswana:} 15 February 2027 -- 15 May 2027
+
+\newpage
+\setcounter{page}{1}
+
+% ---------------------------------------------------------------- 1
+\section{Description of the proposal}
+
+Botswana has the world's largest elephant population, and as elephants return to areas they have been absent from for decades, they increasingly come into conflict with people. Between 2018 and 2022, about 61 people were killed and 54 injured in conflicts with wildlife, and elephants caused 41 percent of the damage to crops, boreholes, water tanks and fences \cite{atc}. In the Makgadikgadi, elephants were present before the Boteti River began flowing again in 2009, but not in such large numbers. Since then their numbers have grown, and many communities near the national park have not lived with elephants for a generation \cite{evans2019}.
+
+Water is known to drive elephant movement, but the role of minerals such as sodium, calcium and phosphorus is less understood \cite{holdo,abraham}. Elephants for Africa has tracked ten bull elephants with GPS collars in the Makgadikgadi from August 2022 to June 2025 \cite{efa}, and one of the aims of that project was to find out whether mineral needs drive the bulls' movements \cite{aza}.
+
+This project uses the existing GPS data, together with mineral data from a literature review, open environmental data and, if the modelling identifies clear corridors, a small number of soil and dung samples taken along them, to study what drives the elephants' movements and to predict where they are likely to be in the coming months. The project is a master's thesis at Lund University, carried out in collaboration with Elephants for Africa.
+
+% ---------------------------------------------------------------- 2
+\section{Research plans}
+
+\subsection{Main aim}
+To find out whether minerals influence where bull elephants in the Makgadikgadi move, and to predict their movements months ahead, so that communities and wildlife authorities can prepare.
+
+\subsection{Objectives}
+\begin{enumerate}
+\item Predict where the elephants are likely to be 1, 3, 6 and 12 months ahead, using step selection functions (SSF), including a deep learning version (deepSSF).
+\item Test whether minerals influence elephant movement once water and vegetation are accounted for.
+\item Identify corridors and bottlenecks where many elephants pass, and test whether they coincide with mineral-rich areas.
+\item Deliver seasonal maps of likely elephant presence to Elephants for Africa and the Department of Wildlife and National Parks.
+\end{enumerate}
+
+\subsection{Research questions}
+\begin{description}[leftmargin=1.2cm,labelindent=0pt,labelwidth=1cm,font=\normalfont]
+\item[RQ1:] How well do an SSF, an iSSF and a deepSSF predict the movements of bull elephants 1, 3, 6 and 12 months ahead, for elephants and time periods not used for training, compared with a seasonal baseline based on the elephants' previous positions? Does added model complexity improve the predictions, and if so, over which time horizons?
+\item[RQ2:] Do minerals influence where the elephants move? When water and vegetation are accounted for, does adding mineral sources such as salt pans and mineral maps from the literature improve the models, and does the effect vary between seasons?
+\item[RQ3:] Are there corridors or bottlenecks where many elephants pass, and do they coincide with mineral-rich areas?
+\end{description}
+
+\subsection{Methods and techniques}
+
+\textbf{Analysis of existing GPS data.} The GPS data collected by Elephants for Africa is analysed with step selection functions, a standard statistical method for animal movement \cite{fortin,avgar}. The models are used to simulate likely future movements and corridors \cite{signer,osipova}. No new collaring or handling of animals is part of this project.
+
+\textbf{Mineral data from the literature.} The distribution of minerals such as sodium, calcium and phosphorus in the soils of the Makgadikgadi is mapped through a literature review of soil and geological maps, published studies and data from the mining industry. The soil samples previously collected by Elephants for Africa are not part of this project.
+
+\textbf{Optional soil and dung sampling.} If the modelling identifies clear corridors (RQ3) and time allows, at most 20 small topsoil samples (0--20\,cm) and 20 elephant dung samples are collected along these corridors, at sites the elephants use often and at nearby comparison sites. This is expected to take about one field day. The samples contribute to Elephants for Africa's wider study of whether minerals drive the elephants' land use.
+
+\textbf{Laboratory analysis.} The samples are analysed in Botswana if a local laboratory can do the analysis; this is being investigated together with BIUST. Otherwise the soil samples are exported to a laboratory outside Botswana, after an export permit has been obtained, and no dung samples are collected. The samples remain the property of the Government of Botswana.
+
+\textbf{Costs of the optional field work.} The laboratory analysis is funded by Elephants for Africa. The field work is paid by the applicants: a vehicle with driver at BWP 3,110 per field day, plus BWP 400 per day for the park ferry if required, i.e.\ up to BWP 3,510 per field day. No other costs are planned.
+
+\textbf{Environmental data.} Open satellite data on water, vegetation and salt pans, and open soil maps \cite{hengl}, are combined with the mineral data and the GPS data.
+
+\textbf{Safety and permissions.} All work in Botswana is based at Elephants for Africa's research camp. Any field work is done together with Elephants for Africa staff. Permission is sought from the relevant management authority for work inside protected areas, and from communities or landholders for work outside them.
+
+\textbf{Ethics.} The project involves no handling of animals and no human subjects. Dung is collected from the ground, without contact with the animals. The GPS data was collected by Elephants for Africa in an earlier project. Clearance from an animal care or human research ethics committee is therefore not required.
+
+\textbf{Access and benefit sharing.} No genetic resources are collected. Any soil and dung samples are used only for mineral analysis, so the obligations under the Nagoya Protocol do not apply beyond sharing the results as described in Section~\ref{sec:benefits}.
+
+% ---------------------------------------------------------------- 3
+\section{Research locations}
+
+The project is based at Elephants for Africa's research camp, north of the village of Khumaga on the Boteti River, about 140\,km from Maun (physical address: Leroo La Tau Lodge, Khumaga). The camp lies within Makgadikgadi Pans National Park, whose western boundary follows the Boteti River.
+
+The analysis covers GPS data from the western Makgadikgadi and the Boteti River area. If the optional sampling is carried out, exact sampling sites are chosen from the modelling results, within the same region.
+
+A Supplementary Research Permit from the Department of Wildlife and National Parks will be applied for once the research permit has been issued.
+
+% ---------------------------------------------------------------- 4
+\section{Time schedule}
+\begin{itemize}
+\item Before 15 February 2027: Preparation of GPS data and environmental data in Sweden. Literature review of the distribution of minerals in the area.
+\item 15 February -- 15 May 2027: Work in Botswana at Elephants for Africa's research camp: model building and analysis together with Elephants for Africa. If corridors have been identified, about one field day for the optional soil and dung sampling along them.
+\item After 15 May 2027: Final analysis and thesis writing in Sweden. Final report to the Ministry.
+\end{itemize}
+
+% ---------------------------------------------------------------- 5
+\section{Personnel and collaborating research partners}
+\begin{itemize}
+\item Gustaf Jensen and Axel Langenskiöld: MSc students in computer science at Lund University. Responsible for data analysis and modelling, and for the optional sampling. CVs attached.
+\item Jonas Skeppstedt and Johan Lindström: academic supervisors at Lund University.
+\item Kate Evans, Founder and Director of Research, Elephants for Africa: external co-supervisor. The research questions build on her long-term research programme, and she provides scientific guidance throughout the project.
+\item Elephants for Africa: Botswana-registered research and conservation organisation (NGO no.\ CR12058) working in the Makgadikgadi since 2012 \cite{evans2019}. Provides the GPS data, knowledge of the elephants and the area, and accommodation at its research camp. For the optional sampling, it provides a vehicle and driver, paid by the applicants, and funds the laboratory analysis.
+\item Botswana-based personnel:
+  \begin{itemize}
+  \item[--] Masego Mokobela, \todo{qualification and position}, Botswana International University of Science and Technology (BIUST): local academic supervisor. Advises on the local context and on elephant and human perspectives, and investigates local options for analysing the samples.
+  \item[--] Stephanie Kong, MSc Biological Science, Director of Elephants for Africa: logistical support at the research camp, and day-to-day contact for questions about the data and the study area.
+  \item[--] Thatayaone Motsentwa, Associate Degree (Limkokwing University), Research Officer at Elephants for Africa: support with the GPS data, local knowledge of the study area and, if carried out, assistance with the sampling.
+  \end{itemize}
+\item Local affiliation: Botswana International University of Science and Technology (BIUST), Private Bag 16, Palapye, through the local supervisor Masego Mokobela. Her letter confirming the supervision is attached.
+\end{itemize}
+
+% ---------------------------------------------------------------- 6
+\section{Benefits to Botswana and dissemination}
+\label{sec:benefits}
+\begin{itemize}
+\item Human--elephant conflict is a national priority. The project gives a better understanding of where and why elephants move outside protected areas.
+\item Seasonal maps of likely elephant presence can help Elephants for Africa, the Department of Wildlife and National Parks and communities to warn villages and plan measures such as water points or salt licks.
+\item Corridors identified in the project can inform land-use planning.
+\item Skills transfer: The applicants work alongside the Elephants for Africa team, train its staff to use the models and maps, and share the code and everything learned during the project. The exact form is open and will be agreed with Elephants for Africa.
+\item Results are shared through a written report to the Ministry and the Department of Wildlife and National Parks, and the published master's thesis. Copies are deposited as required.
+\item Quarterly progress reports and a final report are submitted to the Ministry.
+\end{itemize}
+
+% ---------------------------------------------------------------- 7
+\section{Attachments}
+\begin{itemize}
+\item Completed research permit application form
+\item Certified copies of the passports of both applicants
+\item Up-to-date CVs of both applicants
+\item Details of Botswana-based personnel
+\item Letter from the local supervisor confirming the supervision, and a copy of her ID
+\item Letter of endorsement from Lund University
+\item Checklist for aligning the proposal with MENT research priorities (Appendix 1)
+\end{itemize}
+
+% ---------------------------------------------------------------- signature
+\newpage
+\section*{Supervisor's signature}
+I have reviewed this research proposal.
+
+\vspace{2cm}
+\rule{4.5cm}{0.4pt}\\
+Jonas Skeppstedt, Department of Computer Science, Lund University \hfill Date:
+
+% ---------------------------------------------------------------- appendix
+\newpage
+\section*{Appendix 1: Checklist for aligning proposal with MENT research priorities}
+{\small
+\renewcommand{\arraystretch}{1.1}
+\begin{center}
+\begin{tabular}{|c|p{11.6cm}|c|c|}
+\hline
+\textbf{No.} & \textbf{Checklist Questions} & \textbf{Yes} & \textbf{No} \\ \hline
+1 & Does the research proposal address one or more themes in the National Biodiversity Strategy and Action Plan or Wildlife Conservation Research Strategic Plan or other existing management instruments? & X & \\ \hline
+2 & Is the proposed study species involved in conflict with humans? & X & \\ \hline
+3 & Is the study species important for non-consumptive tourism or other commercial purposes? & X & \\ \hline
+4 & Is the species involved in issues associated with livestock (other than conflict with humans)? & & X \\ \hline
+5 & Global status of the species: Is it classified as critical, endangered, threatened or vulnerable? & X & \\ \hline
+6 & National status of the species: Is it designated as endemic, unique, rare, declining, unknown status, uncommon or stable? & X & \\ \hline
+7 & Have there been previous studies on this subject/species? & X & \\ \hline
+8 & If studies already exist, is the proposed research a necessary test of a previous finding or an essential part of a long-term study? & X & \\ \hline
+9 & Is the research a comparable \& necessary repeat of a previous finding (or part of continued monitoring)? & & X \\ \hline
+10 & Is the proposed research relevant to management activities or planned management? & X & \\ \hline
+11 & Will results of the proposed research be providing a direct answer about outcome of management activity or planned management? & & X \\ \hline
+12 & Will the results be providing background information that might be of some use to management activities or planned management? & X & \\ \hline
+13 & Is the scale of the proposed research countrywide? & & X \\ \hline
+14 & Is the research likely to contribute to issues/areas of international importance? & X & \\ \hline
+15 & Are the results of the research likely to have direct commercial spin off? & & X \\ \hline
+16 & Will the cost (financial/other) to the Government of Botswana be significant? & & X \\ \hline
+17 & Is the proposed research intended to produce an inventory? & & X \\ \hline
+18 & Will it be a study of habitat changes, an ecosystem, trends or population dynamics? & X & \\ \hline
+19 & Will the proposed study produce baseline information? & X & \\ \hline
+20 & Is the subject for study negatively impacted by human activity/construction? & X & \\ \hline
+21 & Will the proposed study involve use of unusual features of an area? -- i.e., could not easily be performed elsewhere? & X & \\ \hline
+22 & ADDITIONALLY: Is the research intended to exploit the `reference ecosystem' properties of the research area or make use of historical data-sets from the area? & X & \\ \hline
+23 & Will the study address the consequences of climate change or other large-scale environmental change? & & X \\ \hline
+24 & Does the research proposal entail a component on skills transfer / capacity building or capacity development for local researchers? & X & \\ \hline
+\end{tabular}
+\end{center}
+}
+
+% ---------------------------------------------------------------- references
+\newpage
+\begin{thebibliography}{99}
+\bibitem{atc} ATC News, ``Botswana holds meeting to address human-wildlife conflict concerns'', 2023. \url{https://atcnews.org/botswana-holds-meeting-to-address-human-wildlife-conflict-concerns/}
+\bibitem{evans2019} K. E. Evans, ``Elephants for Africa: male Savannah elephant \emph{Loxodonta africana} sociality, the Makgadikgadi and resource competition'', \emph{International Zoo Yearbook}, vol.~53, pp.~200--207, 2019. doi:10.1111/izy.12238.
+\bibitem{holdo} R. M. Holdø, J. P. Dudley and L. R. McDowell, ``Geophagy in the African elephant in relation to availability of dietary sodium'', \emph{Journal of Mammalogy}, vol.~83, no.~3, 2002.
+\bibitem{abraham} A. J. Abraham et al., ``Sodium constraints on megaherbivore communities in Africa'', \emph{Nature Ecology \& Evolution}, 2025. doi:10.1038/s41559-025-02917-y.
+\bibitem{efa} Elephants for Africa, ``Three Years of Tracking Elephants'', project report, GlobalGiving, 2026. \url{https://cl.globalgiving.org/projects/male-elephants-of-the-makgadikgadi/reports/}
+\bibitem{aza} Association of Zoos and Aquariums, ``A New Geo-Tracking Project Aims to Demystify the Movement of African Elephant Bulls'', n.d. \url{https://www.aza.org/connect-stories/stories/elephants-for-africa-geo-tracking-project-movement-of-males}
+\bibitem{fortin} D. Fortin, H. L. Beyer, M. S. Boyce, D. W. Smith, T. Duchesne and J. S. Mao, ``Wolves influence elk movements: behavior shapes a trophic cascade in Yellowstone National Park'', \emph{Ecology}, vol.~86, no.~5, pp.~1320--1330, 2005. doi:10.1890/04-0953.
+\bibitem{avgar} T. Avgar, J. R. Potts, M. A. Lewis and M. S. Boyce, ``Integrated step selection analysis: bridging the gap between resource selection and animal movement'', \emph{Methods in Ecology and Evolution}, vol.~7, no.~5, pp.~619--630, 2016. doi:10.1111/2041-210X.12528.
+\bibitem{signer} J. Signer, J. Fieberg and T. Avgar, ``Estimating utilization distributions from fitted step-selection functions'', \emph{Ecosphere}, vol.~8, no.~4, 2017.
+\bibitem{osipova} L. Osipova, M. M. Okello, S. J. Njumbi, S. Ngene, D. Western, M. W. Hayward and N. Balkenhol, ``Using step-selection functions to model landscape connectivity for African elephants: accounting for variability across individuals and seasons'', \emph{Animal Conservation}, vol.~22, no.~1, pp.~35--48, 2019. doi:10.1111/acv.12432.
+\bibitem{hengl} T. Hengl et al., ``African soil properties and nutrients mapped at 30\,m spatial resolution using two-scale ensemble machine learning'', \emph{Scientific Reports}, vol.~11, 6130, 2021. doi:10.1038/s41598-021-85639-y.
+\end{thebibliography}
+
+\end{document}
